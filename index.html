@@ -257,6 +257,151 @@
       <h6 class="description-text text-center">
         the  languages, frameworks, databases and other tools that i’m currently using in my work
       </h6>
+
+      <div class="tech-tabs d-flex justify-content-center mx-auto">
+
+        <button class="btn techtab active" onclick="displayTab(event, '#langs')">Languages and Frameworks</button>
+        <button class="btn techtab" onclick="displayTab(event, '#cloud')">Cloud computing</button>
+        <button class="btn techtab" onclick="displayTab(event, '#ux')">UI/UX tools</button>
+      </div>
+
+      <div id="langs" class="techstack mx-auto">
+        <img class="tab-icon" src="static/icons/1.png" alt="">
+
+        <p class="text-start">Python</p>
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">Flask</p>
+          <p class="framework">Django</p>
+
+          
+        </div>
+        <p class="text-start">Java</p>
+
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">Java EE</p>
+          
+        </div>
+
+        <p class="text-start">PHP</p>
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">Laravel</p>
+          <p class="framework">CodeIgniter</p>
+
+          
+        </div>
+
+        <p class="text-start">Databases</p>
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">PostgreSQL</p>
+          <p class="framework">mySQL</p>
+
+          
+        </div>
+
+        <p class="text-start">Javascript</p>
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">VueJS</p>
+          <p class="framework">JQuery</p>
+
+          
+        </div>
+
+        <p class="text-start">HTML & CSS</p>
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">Bootstrap</p>
+          <p class="framework">Bulma</p>
+          <p class="framework">Vuetify</p>
+
+
+          
+        </div>
+
+
+      </div>
+
+      <!-- ------------- -->
+
+      <div id="cloud" class="techstack mx-auto hidden">
+        <img class="tab-icon" src="static/icons/2.png" alt="">
+
+        <p class="text-start">Amazon web services</p>
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">EC2</p>
+          <p class="framework">ELB</p>
+          <p class="framework">S3 storage</p>
+
+
+          
+        </div>
+        <p class="text-start">Google Cloud</p>
+
+        <div class="frameworks d-flex justify-content-start">
+
+          <p class="framework">GCS</p>
+          <p class="framework">Cloud SQL</p>
+
+          
+        </div>
+
+
+          
+        </div>
+
+        <!-- ----------------- -->
+
+        <div id="ux" class="techstack mx-auto hidden">
+          <img class="tab-icon" src="static/icons/3.png" alt="">
+
+          <p class="text-start">Figma</p>
+
+          <p class="text-start">Adobe XD</p>
+
+          <p class="text-start">Photoshop</p>
+
+  
+ 
+  
+  
+            
+          </div>
+
+      </div>
+
+
     </section>
+
+    <section class="contact sec"></section>
   </body>
+
+<!-- tabs script -->
+  <script>
+    activeTabId = '#langs' //default
+
+    async function displayTab(e, tabName){
+
+      //remove active class from the tabs menu old element
+      document.querySelector('.tech-tabs .active').classList.remove('active');
+
+      //hide old content
+      document.querySelector(activeTabId).classList.add('hidden');
+
+      //add active class to the tabs menu element and display new content
+      e.target.classList.add('active');
+
+      document.querySelector(tabName).classList.remove('hidden');
+
+      activeTabId = tabName
+
+
+
+    }
+
+  </script>
 </html>
