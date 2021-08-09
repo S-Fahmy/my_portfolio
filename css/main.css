@@ -1,0 +1,219 @@
+body {
+    background-color: #161616;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+p {
+    font-family: Montserrat Alternates;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: white;
+    opacity: 86%;
+}
+
+.sec {
+    margin-top: 200px;
+}
+
+.description-text {
+    font-weight: 500;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 100px;
+}
+
+.navbar {
+    padding: 50px 150px;
+}
+
+.navbar ul li a {
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.landing-container {
+    padding-left: 150px;
+    height: 100vh;
+    background-image: url("../static/images/landing-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.landing-text {
+    line-height: 49px;
+    letter-spacing: 0.2em;
+}
+
+.landing-text h1, .bold-red {
+    font-weight: 900 !important;
+}
+
+.landing-text h1, .landing-text h3 {
+    background-color: #161616;
+    padding: 10px;
+    width: max-content;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.bold-red {
+    color: #FF0000;
+}
+
+.btn {
+    color: white;
+    font-weight: 500;
+    font-size: 1.25em;
+    padding: 15px 40px;
+    background: #242424;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-right: 50px;
+    border: none;
+    outline: none !important;
+    outline-style: none;
+}
+
+.btn:hover {
+    background-color: #161616;
+    color: white;
+}
+
+.btn-icon {
+    margin-left: 30px;
+}
+
+.red-btn {
+    background-image: radial-gradient(circle at 100% 100%, transparent 30px, #fc8a8a 30px, #fc8a8a 32px, transparent 32px), linear-gradient(to right, #fc8a8a, #ff0000), radial-gradient(circle at 0% 100%, transparent 30px, #ff0000 30px, #ff0000 32px, transparent 32px), linear-gradient(to bottom, #ff0000, #ff0000), radial-gradient(circle at 0% 0%, transparent 30px, #ff0000 30px, #ff0000 32px, transparent 32px), linear-gradient(to left, #ff0000, #fc8a8a), radial-gradient(circle at 100% 0%, transparent 30px, #fc8a8a 30px, #fc8a8a 32px, transparent 32px), linear-gradient(to top, #fc8a8a, #fc8a8a);
+    background-size: 32px 32px, calc(100% - 64px) 2px, 32px 32px, 2px calc(100% - 64px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+}
+
+.blue-btn {
+    background-image: radial-gradient(circle at 100% 100%, transparent 30px, #33ffcd 30px, #33ffcd 32px, transparent 32px), linear-gradient(to right, #33ffcd, #5ea4c3), radial-gradient(circle at 0% 100%, transparent 30px, #5ea4c3 30px, #5ea4c3 32px, transparent 32px), linear-gradient(to bottom, #5ea4c3, #5ea4c3), radial-gradient(circle at 0% 0%, transparent 30px, #5ea4c3 30px, #5ea4c3 32px, transparent 32px), linear-gradient(to left, #5ea4c3, #33ffcd), radial-gradient(circle at 100% 0%, transparent 30px, #33ffcd 30px, #33ffcd 32px, transparent 32px), linear-gradient(to top, #33ffcd, #33ffcd);
+    background-size: 32px 32px, calc(100% - 64px) 2px, 32px 32px, 2px calc(100% - 64px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 5.5%;
+    right: 9%;
+}
+
+.brackets {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
+    font-size: 200px;
+    text-align: center;
+    color: white;
+    opacity: 6%;
+}
+
+#myTitles {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 169.5%;
+    text-align: center;
+    color: #FF0000;
+    
+}
+
+.title-margin{
+    margin-bottom: 100px !important;
+}
+
+.whatdo-text p {
+    font-size: 23px;
+}
+
+.whatDoCards {
+    margin-top: 100px;
+}
+
+.whatDoCards p {
+    font-weight: 600;
+    opacity: 100%;
+}
+
+.whatDoCard {
+    padding: 60px 30px;
+    background: #242424;
+    border-radius: 30px;
+    margin-left: 50px;
+    width: 18.667%;
+}
+
+.card-icon {
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    background: #242424;
+    border-radius: 20px;
+    padding: 100px;
+    width: 85%;
+}
+
+.project-item{
+    margin-bottom: 200px;
+}
+
+.tech-tag {
+    margin-bottom: 50px;
+    font-size: 12px;
+    color: #161616;
+    background: #33FFCD;
+    border-radius: 30px;
+    padding: 10px;
+    width: max-content;
+}
+
+.readMoreBtn {
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.url{
+    color: #33FFCD !important;
+}
+
+
+.semi-bold-text{
+    font-weight: 600;
+}
+
+ .techSkills{
+     padding: 100px;
+     background-image: url("../static/images/mesh-bg.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
