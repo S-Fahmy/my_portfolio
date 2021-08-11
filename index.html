@@ -173,7 +173,7 @@
               favorites.
             </p>
 
-            <button class="btn red-btn readMoreBtn">READ MORE</button>
+            <a class="btn red-btn readMoreBtn" href="projects/aviram-image-recognition.html">READ MORE</a>
           </div>
 
           <div class="col d-flex">
@@ -206,7 +206,7 @@
               informations and products.
             </p>
 
-            <button class="btn red-btn readMoreBtn">READ MORE</button>
+            <a class="btn red-btn readMoreBtn" href="/projects/ist-website.html">READ MORE</a>
           </div>
         </div>
 
@@ -377,31 +377,61 @@
 
     </section>
 
-    <section class="contact sec"></section>
+    <section class="container-fluid contact-container sec">
+
+      <div class="row contact-container m-auto">
+        <div class="col-5 justify-content-center d-flex flex-column">
+
+          <h4 id="myTitles" class="text-center">CONTACT</h4>
+          <p class="text-center title-margin">My Email: <a href="mailto:saleh.fahmy2@gmail.com" class="email">saleh.fahmy2@gmail.com </a>
+             <button class="btn btn copy-btn" onclick="copyEmail()">Copy</button></p>
+
+
+
+             <div class="reviews-container mt-auto">
+                <h6 class="reviews-title text-start"><img class="me-3" src="static/icons/quotes1.png" alt="" srcset=""> Feedback & Reviews</h6>
+                <p class="text-center reviews-text">Saleh F. recreated my website after it had been lost. He provided excellent work and service, even beyond what I asked for. He was proactive and engaged, and I would definitely recommend him.</p>
+                <p class="reviews-text text-start client-name"> - client one <img class="float-end" src="static/icons/quotes2.png" alt="" srcset=""></p>
+             </div>
+        </div>
+
+        <div class="offset-2 col-5 contact-form-wrapper">
+          
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Your E-mail*</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required placeholder="Your Email address">
+            </div>
+ 
+            <div class="form-group">
+              <label for="exampleInputEmail1">Your Message*</label>
+              <textarea class="form-control" id="message" name="message" aria-describedby="message" required ></textarea>
+            </div>
+
+            <button type="submit" class="btn red-btn m-0 float-end send-btn">Send E-mail</button>
+          </form>
+
+        </div>
+      </div>
+
+    </section>
+
+
+<footer class="d-flex">
+
+<p class="my-auto">Saleh Fahmy.</p>
+
+<img class="ms-auto my-auto" src="static/icons/github.png" alt="" srcset="">
+<img class="ms-3 my-auto" src="static/icons/github.png" alt="" srcset="">
+
+</footer>
+
   </body>
 
-<!-- tabs script -->
-  <script>
-    activeTabId = '#langs' //default
-
-    async function displayTab(e, tabName){
-
-      //remove active class from the tabs menu old element
-      document.querySelector('.tech-tabs .active').classList.remove('active');
-
-      //hide old content
-      document.querySelector(activeTabId).classList.add('hidden');
-
-      //add active class to the tabs menu element and display new content
-      e.target.classList.add('active');
-
-      document.querySelector(tabName).classList.remove('hidden');
-
-      activeTabId = tabName
-
-
-
-    }
-
-  </script>
+<script src="js/main.js"></script>
 </html>

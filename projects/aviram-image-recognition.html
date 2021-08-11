@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Montserrat:wght@100;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/projects.css" />
+    <title>Aviram</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Saleh Fahmy.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WHAT I DO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">MY WORKS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">TECH STACK</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Aviram Image Recognition app</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 d-flex">
+          <p class="m-auto">
+            Aviram is a web application powered by an Image recognition AI model
+            aimed towards photographers with different features to help them
+            store, sort and group similar looking images, visual search images,
+            picking their favorite images from different gallery sets and Select
+            and share images with others to vote on their favorites.
+          </p>
+        </div>
+
+        <div class="col-6 d-flex">
+          <img
+            class="m-auto"
+            src="../static/images/projects/aviram/intro1.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="col-6 mt-5">
+          <img
+            src="../static/images/projects/aviram/intro2.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="col-6 mt-5 d-flex">
+          <img
+            class="m-auto"
+            src="../static/images/projects/aviram/intro3.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="d-flex">
+          <p class="w-75 mx-auto">
+            Mainly, the app uses
+            <span class="bold-red">Javascript(JQuery)</span> on the frontend,
+            <span class="bold-red">python Flask</span> as the backend framework
+            and is hosted on <span class="bold-red">Google Cloud Platform</span>
+            Engine
+          </p>
+        </div>
+      </div>
+
+      <h2>MY ROLE:</h2>
+      <p>
+        We were a team of 2, a machine learning developer and me as the
+        fullstack web developer where i had the opportunity to plan and develop
+        multiple important features.
+      </p>
+
+      <h2>CHALLENGES:</h2>
+      <p class="mb-0">
+        When I first started on this project the AI model and backend API ran in
+        an unoptimized way that took a long time to load up gallery sets, so a
+        better and more optimized solution needed to be implemented.
+
+        <br />
+        <br />
+        I took the responsibility to plan and implement an optimized
+        multi-processed workflow for the API and the AI model to do their job,
+        and persist only the needed AI output data to be loaded quicker on
+        demand. So now when a user opens up a big gallery that he just uploaded
+        or a shared gallery made by another user, the needed AI data loads up in
+        a quick and smooth way. This workflow is done on multiple background
+        steps and uses the <span class="bold-white">GC tasks API </span> and
+        <span class="bold-white"> GC storage </span> services. I have
+        implemented a logging feature and error checking, for reliability.
+      </p>
+      <hr />
+
+      <div class="row">
+        <div class="col-6 d-flex">
+          <p class="m-auto">
+            on the gallery page, Users are meant to view all of the images
+            gallery on one page, meaning there was no multi-page pagination on
+            purpose, and gallery pages are considerably long.
+            <br /><br />
+            To solve this I was asked to design and implement a custom gallery
+            minimap that fits the different gallery layouts (normal, sorted and
+            grouped, stacked, favorites and shared images layouts).
+          </p>
+        </div>
+
+        <div class="col-6 d-flex">
+          <img
+            class="ms-auto"
+            src="../static/images/projects/aviram/challenges1.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-6 d-flex flex-column">
+          <p class="mx-auto mt-0 mb-5">
+            There are more features that i have built like favoriting images,
+            grouping and stacking similar images, searching by images, gallery
+            images selections, sharing with none registered users and voting
+            functionalities.
+          </p>
+
+          <img
+          class="m-auto"
+          src="../static/images/projects/aviram/challenges3.png"
+          alt=""
+        />
+        </div>
+
+        <div class="col-6 d-flex">
+            <img
+            class="ms-auto"
+            src="../static/images/projects/aviram/challenges2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="d-flex">
+
+        <p class="my-auto">Saleh Fahmy.</p>
+        
+        <img class="ms-auto my-auto" src="../static/icons/github.png" alt="" srcset="">
+        <img class="ms-3 my-auto" src="../static/icons/github.png" alt="" srcset="">
+        
+        </footer>
+  </body>
+</html>
