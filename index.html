@@ -22,7 +22,7 @@
     <title>Saleh Fahmy</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-sm">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Saleh Fahmy.</a>
         <button
@@ -71,11 +71,11 @@
           I’M WORKING AS A <span class="bold-red"> FULLSTACK DEVELOPER </span>
         </h3>
 
-        <button class="btn red-btn">
+        <button class="btn red-btn landing-btn">
           About Me
           <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
         </button>
-        <button class="btn blue-btn">
+        <button class="btn blue-btn landing-btn">
           Check my Works
           <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
         </button>
@@ -92,13 +92,13 @@
     </section>
 
     <section class="whatdo sec">
-      <div class="row justify-content-center">
-        <div class="col-3 d-flex">
+      <div class="row gx-0 justify-content-center">
+        <div class="col-12 col-md-3 d-flex">
           <h4 id="myTitles" class="m-auto">WHAT I DO</h4>
         </div>
-        <div class="col-1"><p class="text-end brackets">{</p></div>
+        <div class="col-2 col-md-1"><p class="text-end brackets">{</p></div>
 
-        <div class="col-4 d-flex mb-3 whatdo-text">
+        <div class="col-8 col-md-4 d-flex mb-3 whatdo-text">
           <div class="m-auto">
             <h5 class="text-center nmu">NICE TO MEET YOU!</h5>
 
@@ -110,11 +110,16 @@
           </div>
         </div>
 
-        <div class="col-1"><p class="brackets text-start">}</p></div>
+        <div class="col-2 col-md-1"><p class="brackets text-start">}</p></div>
       </div>
 
+      <p class="text-center m-auto w-75 experience-title">
+        I have <span class="blue-text">4+ years</span> of Experience building &
+        developing:
+      </p>
+
       <div class="row gx-3 justify-content-center whatDoCards">
-        <div class="col-2 whatDoCard d-flex flex-column">
+        <div class="col-6 col-md-2 whatDoCard d-flex flex-column">
           <img
             class="card-icon mx-auto"
             src=""
@@ -122,11 +127,12 @@
             srcset="static/icons/backend.png"
           />
           <p class="text-center my-auto">
-            experience building backend applications.
+            <span class="desktop-text">experience building</span> backend
+            applications.
           </p>
         </div>
 
-        <div class="col-2 whatDoCard d-flex flex-column">
+        <div class="col-6 col-md-2 whatDoCard d-flex flex-column fr">
           <img
             class="card-icon mx-auto"
             src=""
@@ -134,11 +140,12 @@
             srcset="static/icons/frontend.png"
           />
           <p class="text-center my-auto">
-            experience building responsive frontends designs.
+            <span class="desktop-text"> experience building responsive</span>
+            frontend designs.
           </p>
         </div>
 
-        <div class="col-2 whatDoCard d-flex flex-column">
+        <div class="col-2 whatDoCard d-flex flex-column experience">
           <img
             class="card-icon mx-auto"
             src=""
@@ -152,19 +159,19 @@
 
     <section class="my works sec">
       <h4 id="myTitles" class="m-auto">MY WORKS</h4>
-      <h6 class="description-text text-center">
+      <h6 class="description-text text-center w-25 mx-auto">
         Selected websites and web applications projects that i have recently
         worked on
       </h6>
 
       <div class="container-fluid projects-container">
         <div class="row project-item justify-content-center">
-          <div class="col project-description">
-            <h5 class="text-start">Aviram Image Recognition</h5>
+          <div class="col-12 col-md project-description">
+            <h5 class="text-center text-md-start">Aviram Image Recognition</h5>
 
-            <div class="tech-tag">Fullstack Development</div>
+            <div class="tech-tag mx-auto mx-md-0">Fullstack Development</div>
 
-            <p class="project-text">
+            <p class="project-text mb-0">
               Aviram is a web application powered by an Image recognition AI
               model aimed towards photographers with different features to help
               them store, sort and group similar looking images, visual search
@@ -173,63 +180,85 @@
               favorites.
             </p>
 
-            <a class="btn red-btn readMoreBtn" href="projects/aviram-image-recognition.html">READ MORE</a>
+            <div class="d-flex">
+              <a
+                class="btn red-btn readMoreBtn mx-auto mx-md-0"
+                href="projects/aviram-image-recognition.html"
+                >READ MORE</a
+              >
+            </div>
           </div>
 
-          <div class="col d-flex">
+          <div class="col-12 col-md d-flex project-image">
             <img
               src="static/images/project-aviram.png"
               alt="aviram"
-              class="ms-auto my-auto"
+              class="ms-auto my-auto img-fluid"
             />
           </div>
         </div>
 
+        <!-- project ends -->
+
         <div class="row project-item justify-content-center">
-          <div class="col d-flex project-image">
-            <img
-              src="static/images/project-ist.png"
-              alt="ist"
-              class="me-auto my-auto"
-            />
-          </div>
+          <div class="col-12 col-md project-description">
+            <h5 class="text-center text-md-start">IST industries website</h5>
 
-          <div class="col project-description">
-            <h5 class="text-start">IST industries website</h5>
+            <div class="tech-tag mx-auto mx-md-0">Frontend Development</div>
 
-            <div class="tech-tag">Frontend Development</div>
-
-            <p class="project-text">
+            <p class="project-text mb-0">
               IST is a company working in the industrial field and the main
               purpose of the website is to to display the company’s profile,
               information about their services, team introduction, contact
               informations and products.
             </p>
+            <div class="d-flex">
+              <a
+                class="btn red-btn readMoreBtn mx-auto mx-md-0"
+                href="projects/ist-website.html"
+                >READ MORE</a
+              >
+            </div>
+          </div>
 
-            <a class="btn red-btn readMoreBtn" href="/projects/ist-website.html">READ MORE</a>
+          <div class="col-12 col-md d-flex project-image">
+            <img
+              src="static/images/project-ist.png"
+              alt="ist"
+              class="ms-auto my-auto img-fluid"
+            />
           </div>
         </div>
+        <!-- project ends -->
 
         <div class="row project-item justify-content-center mb-0">
-          <div class="col project-description">
-            <h5 class="text-start">Attendance & work hours tracker web app</h5>
+          <div class="col-12 col-md project-description">
+            <h5 class="text-center text-md-start">
+              Attendance & work hours tracker web app
+            </h5>
 
-            <div class="tech-tag">Fullstack Development</div>
+            <div class="tech-tag mx-auto mx-md-0">Fullstack Development</div>
 
-            <p class="project-text">
+            <p class="project-text mb-0">
               This service is part of an HR app i’ve worked on, It’s Responsible
               for importing employees attendances data from FP machine
               (currently it can integrate with multiple ZTeco machines).
             </p>
 
-            <button class="btn red-btn readMoreBtn">READ MORE</button>
+            <div class="d-flex">
+              <a
+                class="btn red-btn readMoreBtn mx-auto mx-md-0"
+                href="projects/attendance-tracker.html"
+                >READ MORE</a
+              >
+            </div>
           </div>
 
-          <div class="col d-flex">
+          <div class="col-12 col-md d-flex project-image">
             <img
               src="static/images/project-attendance.png"
               alt="aviram"
-              class="ms-auto my-auto"
+              class="ms-auto my-auto img-fluid"
             />
           </div>
         </div>
@@ -243,195 +272,284 @@
         taking part building different projects in my previous job like a
         backend system for HR, invoicing, PO and employees attendances/tracking
         web application for the first company i worked at.
-        <br> <br>
-        I’m currently working
-        on building my freelancing career base. <span class="semi-bold-text">If you are looking to hire a
-        developer to build a website or a web application for you, you can
-        <a class="url" href="#"> contact me here </a></span>. 
+        <br />
+        <br />
+        I’m currently working on building my freelancing career base.
+        <span class="semi-bold-text"
+          >If you are looking to hire a developer to build a website or a web
+          application for you, you can
+          <a class="url" href="#"> contact me here </a></span
+        >.
       </p>
     </section>
 
-
     <section class="techSkills sec">
       <h4 id="myTitles" class="m-auto">TECHNICAL SKILLS</h4>
-      <h6 class="description-text text-center">
-        the  languages, frameworks, databases and other tools that i’m currently using in my work
+      <h6 class="description-text text-center mx-auto">
+        the languages, frameworks, databases and other tools that i’m currently
+        using in my work
       </h6>
 
       <div class="tech-tabs d-flex justify-content-center mx-auto">
-
-        <button class="btn techtab active" onclick="displayTab(event, '#langs')">Languages and Frameworks</button>
-        <button class="btn techtab" onclick="displayTab(event, '#cloud')">Cloud computing</button>
-        <button class="btn techtab" onclick="displayTab(event, '#ux')">UI/UX tools</button>
+        <button
+          class="btn techtab active"
+          onclick="displayTab(event, '#langs')"
+        >
+          Languages & Frameworks
+        </button>
+        <button class="btn techtab" onclick="displayTab(event, '#cloud')">
+          Cloud computing
+        </button>
+        <button class="btn techtab" onclick="displayTab(event, '#ux')">
+          UI/UX tools
+        </button>
       </div>
 
-      <div id="langs" class="techstack mx-auto">
-        <img class="tab-icon" src="static/icons/1.png" alt="">
+      <div id="langs" class="techstack row justify-content-center">
+        <img class="tab-icon" src="static/icons/1.png" alt="" />
+
+        <div class="col offset-md-1 col-md-3 left-tech-col">
 
         <p class="text-start">Python</p>
-        <div class="frameworks d-flex justify-content-start">
-
-          <p class="framework">Flask</p>
-          <p class="framework">Django</p>
-
-          
+        <div class="frameworks row g-4">
+          <div class="col-6  col-md-3  ">
+            <p class="framework">Flask</p>
+          </div>
+          <div class="col-6  col-md-3  ">
+            <p class="framework">Django</p>
+          </div>
         </div>
         <p class="text-start">Java</p>
 
-        <div class="frameworks d-flex justify-content-start">
-
-          <p class="framework">Java EE</p>
-          
+        <div class="frameworks row g-0">
+          <div class="col-md-3">
+            <p class="framework">Java EE</p>
+          </div>
         </div>
 
         <p class="text-start">PHP</p>
-        <div class="frameworks d-flex justify-content-start">
-
-          <p class="framework">Laravel</p>
-          <p class="framework">CodeIgniter</p>
-
-          
+        <div class="frameworks row g-4">
+          <div class="col-5 col-md-4    ">
+            <p class="framework">Laravel</p>
+            </div>
+            <div class="col-5  col-md-4  ">
+            <p class="framework">CodeIgniter</p>
+          </div>
         </div>
+</div>
 
+<div class="col offset-md-1 col-md-3 right-tech-col">
         <p class="text-start">Databases</p>
-        <div class="frameworks d-flex justify-content-start">
+        <div class="frameworks row g-4">
+          <div class="col-6 col-md-4 ">
+            <p class="framework">PostgreSQL</p>
+          </div>
+          <div class="col-4 col-md-4 ">
+            <p class="framework">mySQL</p>
+          </div>
 
-          <p class="framework">PostgreSQL</p>
-          <p class="framework">mySQL</p>
-
-          
+          <div class="col-4 col-md-4 ">
+            <p class="framework">Redis</p>
+          </div>
         </div>
 
         <p class="text-start">Javascript</p>
-        <div class="frameworks d-flex justify-content-start">
+        <div class="frameworks row g-4">
+          <div class="col-6 col-md-4">
+            <p class="framework">VueJS</p>
+            </div>
+            <div class="col-6 col-md-4">
 
-          <p class="framework">VueJS</p>
-          <p class="framework">JQuery</p>
-
-          
+            <p class="framework">JQuery</p>
+          </div>
         </div>
 
         <p class="text-start">HTML & CSS</p>
-        <div class="frameworks d-flex justify-content-start">
+        <div class="frameworks row g-4">
+          <div class="col-6 col-md-4 ">
+            <p class="framework">Bootstrap</p>
+            </div>
+            <div class="col-6 col-md-3 ">
 
-          <p class="framework">Bootstrap</p>
-          <p class="framework">Bulma</p>
-          <p class="framework">Vuetify</p>
+            <p class="framework">Bulma</p>
+            </div>
+            <div class="col-6 col-md-4">
 
-
-          
+            <p class="framework">Vuetify</p>
+          </div>
+        </div>
         </div>
 
+</div>
+        <!-- ------------- -->
 
-      </div>
+        <div id="cloud" class="techstack row justify-content-center hidden">
+          <img class="tab-icon" src="static/icons/2.png" alt="" />
 
-      <!-- ------------- -->
+          <div class="col offset-md-1 col-md-3 col left-tech-col">
 
-      <div id="cloud" class="techstack mx-auto hidden">
-        <img class="tab-icon" src="static/icons/2.png" alt="">
+          <p class="text-start">Amazon web services</p>
+          <div class="frameworks row g4">
+            <div class="col-6 col-md-4">
+            <p class="framework">EC2</p>
+          </div>
 
-        <p class="text-start">Amazon web services</p>
-        <div class="frameworks d-flex justify-content-start">
+          <div class="col-6 col-md-4">
+            <p class="framework">ELB</p>
+          </div>
 
-          <p class="framework">EC2</p>
-          <p class="framework">ELB</p>
-          <p class="framework">S3 storage</p>
-
-
+          <div class="col-6 col-md-4">
+            <p class="framework">S3 storage</p>
+          </div>
           
+          </div>
+
+          </div>
+
+          <div class="col offset-md-1 col-md-3 right-tech-col">
+          <p class="text-start">Google Cloud</p>
+
+          <div class="frameworks row g-4">
+      
+
+            <div class="col-6 col-md-4">
+              <p class="framework">GCS</p>
+            </div>
+  
+            <div class="col-6 col-md-4">
+              <p class="framework">Cloud SQL</p>
+            </div>
+          </div>
         </div>
-        <p class="text-start">Google Cloud</p>
-
-        <div class="frameworks d-flex justify-content-start">
-
-          <p class="framework">GCS</p>
-          <p class="framework">Cloud SQL</p>
-
-          
-        </div>
-
-
-          
         </div>
 
         <!-- ----------------- -->
 
-        <div id="ux" class="techstack mx-auto hidden">
-          <img class="tab-icon" src="static/icons/3.png" alt="">
+        <div id="ux" class="techstack row justify-content-center hidden">
+          <img class="tab-icon" src="static/icons/3.png" alt="" />
 
-          <p class="text-start">Figma</p>
+          <div class="col offset-md-1 col-md-2">
+            <p class="text-start">Figma</p>
 
-          <p class="text-start">Adobe XD</p>
-
-          <p class="text-start">Photoshop</p>
-
-  
- 
-  
-  
-            
           </div>
+          
+          <div class="col col-md-2">
+            <p class="text-start">Adobe XD</p>
 
+          </div>
+          
+          <div class="col col-md-2">
+            <p class="text-start">Photoshop</p>
+
+          </div>
+          
+
+        </div>
       </div>
-
-
     </section>
 
     <section class="container-fluid contact-container sec">
-
       <div class="row contact-container m-auto">
         <div class="col-5 justify-content-center d-flex flex-column">
-
           <h4 id="myTitles" class="text-center">CONTACT</h4>
-          <p class="text-center title-margin">My Email: <a href="mailto:saleh.fahmy2@gmail.com" class="email">saleh.fahmy2@gmail.com </a>
-             <button class="btn btn copy-btn" onclick="copyEmail()">Copy</button></p>
+          <p class="text-center title-margin">
+            My Email:
+            <a href="mailto:saleh.fahmy2@gmail.com" class="email"
+              >saleh.fahmy2@gmail.com
+            </a>
+            <button class="btn btn copy-btn" onclick="copyEmail()">Copy</button>
+          </p>
 
-
-
-             <div class="reviews-container mt-auto">
-                <h6 class="reviews-title text-start"><img class="me-3" src="static/icons/quotes1.png" alt="" srcset=""> Feedback & Reviews</h6>
-                <p class="text-center reviews-text">Saleh F. recreated my website after it had been lost. He provided excellent work and service, even beyond what I asked for. He was proactive and engaged, and I would definitely recommend him.</p>
-                <p class="reviews-text text-start client-name"> - client one <img class="float-end" src="static/icons/quotes2.png" alt="" srcset=""></p>
-             </div>
+          <div class="reviews-container mt-auto">
+            <h6 class="reviews-title text-start">
+              <img
+                class="me-3"
+                src="static/icons/quotes1.png"
+                alt=""
+                srcset=""
+              />
+              Feedback & Reviews
+            </h6>
+            <p class="text-center reviews-text">
+              Saleh F. recreated my website after it had been lost. He provided
+              excellent work and service, even beyond what I asked for. He was
+              proactive and engaged, and I would definitely recommend him.
+            </p>
+            <p class="reviews-text text-start client-name">
+              - client one
+              <img
+                class="float-end"
+                src="static/icons/quotes2.png"
+                alt=""
+                srcset=""
+              />
+            </p>
+          </div>
         </div>
 
         <div class="offset-2 col-5 contact-form-wrapper">
-          
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Your Name</label>
-              <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Your Name">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                aria-describedby="name"
+                placeholder="Your Name"
+              />
             </div>
 
             <div class="form-group">
               <label for="exampleInputEmail1">Your E-mail*</label>
-              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required placeholder="Your Email address">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                aria-describedby="emailHelp"
+                required
+                placeholder="Your Email address"
+              />
             </div>
- 
+
             <div class="form-group">
               <label for="exampleInputEmail1">Your Message*</label>
-              <textarea class="form-control" id="message" name="message" aria-describedby="message" required ></textarea>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                aria-describedby="message"
+                required
+              ></textarea>
             </div>
 
-            <button type="submit" class="btn red-btn m-0 float-end send-btn">Send E-mail</button>
+            <button type="submit" class="btn red-btn m-0 float-end send-btn">
+              Send E-mail
+            </button>
           </form>
-
         </div>
       </div>
-
     </section>
 
+    <footer class="d-flex">
+      <p class="my-auto">Saleh Fahmy.</p>
 
-<footer class="d-flex">
-
-<p class="my-auto">Saleh Fahmy.</p>
-
-<img class="ms-auto my-auto" src="static/icons/github.png" alt="" srcset="">
-<img class="ms-3 my-auto" src="static/icons/github.png" alt="" srcset="">
-
-</footer>
-
+      <img
+        class="ms-auto my-auto"
+        src="static/icons/github.png"
+        alt=""
+        srcset=""
+      />
+      <img
+        class="ms-3 my-auto"
+        src="static/icons/github.png"
+        alt=""
+        srcset=""
+      />
+    </footer>
   </body>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Montserrat:wght@100;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/projects.css" />
+    <title>Attendance Trackers</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Saleh Fahmy.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WHAT I DO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">MY WORKS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">TECH STACK</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Attendances Tracking web app</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-center">
+          <p class="m-auto">
+            The web app is part of an HR app i’ve worked on, It’s Responsible
+            for importing employees attendances data from FP machine (currently
+            it can integrate with multiple ZTeco machines).
+          </p>
+        </div>
+
+        <div class="col-6 d-flex">
+          <img
+            class="ms-auto"
+            src="../static/images/projects/attendance/intro.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <h2>MY ROLE:</h2>
+      <p class="text-start w-50">
+        I am the fullstack developer, My goal was to implement the requested
+        custom features this app needs.
+      </p>
+
+      <p class="mb-5 text-center">
+        these main custom features include options like where the responsible
+        admin can manage custom schedules and rules, and assign them to all or specific employees.
+      </p>
+
+      <div class="row">
+        <div class="col-6 d-flex">
+          <img
+            class="m-auto"
+            src="../static/images/projects/attendance/schedule1.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="col-6 d-flex">
+          <img
+            class="m-auto"
+            src="../static/images/projects/attendance/schedule2.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <div class="row sec bot">
+        <div class="col-6 d-flex">
+          <p class="my-auto">
+            And as
+            <span class="bold-white"
+              >the main goal of using this web app is to calculate and generate
+              a detailed employees attendances report in between selected date
+              range</span
+            >,
+            <br />
+            <br />
+
+            the detailed report contains each day employees abscenct status,
+            Total overtime and undertime worked in comparison to the active
+            schedule, Along with a total summary report.
+            <br />
+            <br />
+
+            Responsible Admin can register excused absences, early leaves and
+            events with the option to sync data with google calendar.
+          </p>
+        </div>
+
+        <div class="col-6 d-flex flex-column">
+          <img
+            class="ms-auto mb-5"
+            src="../static/images/projects/attendance/report1.png"
+            alt=""
+            srcset=""
+          />
+
+          <img
+            class="ms-auto"
+            src="../static/images/projects/attendance/report2.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <h2>CHALLENGES</h2>
+
+      <p>
+        One of the challenges for this project was figuring out and planning the
+        right workflow to integrate my API with the FP machine API to import the
+        needed data and reformat it in an optimized data structure other areas
+        of this app can use.
+      </p>
+
+      <p>
+        <span class="bold-white">Tech Used: </span> for the backend, it's built
+        using the <span class="bold-red"> Flask </span> framework,
+        <span class="bold-red">postgreSQL </span> for the database, and the
+        frontend is built with <span class="bold-red">VueJS </span> and
+        <span class="bold-red"> Bootstrap </span>.
+      </p>
+    </div>
+
+    <footer class="d-flex">
+      <p class="my-auto">Saleh Fahmy.</p>
+
+      <img
+        class="ms-auto my-auto"
+        src="../static/icons/github.png"
+        alt=""
+        srcset=""
+      />
+      <img
+        class="ms-3 my-auto"
+        src="../static/icons/github.png"
+        alt=""
+        srcset=""
+      />
+    </footer>
+  </body>
+</html>

@@ -9,7 +9,7 @@ p {
     font-family: Montserrat Alternates;
     font-weight: 500;
     font-size: 18px;
-    line-height: 160%;
+    line-height: 180%;
     color: white;
     opacity: 86%;
     margin-top: 100px;
@@ -50,6 +50,18 @@ h2 {
     font-weight: 600;
     font-size: 40px;
 }
+
+img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.sec {
+    margin-top: 200px;
+}
+
+.bot{
+    margin-bottom: 200px !important;
+}
+
 
 .bold-red {
     font-family: 'Montserrat';

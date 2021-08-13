@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: 600;
 }
 
@@ -19,8 +19,8 @@ h5 {
 p {
     font-family: Montserrat Alternates;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 160%;
+    font-size: 16px;
+    line-height: 180%;
     color: white;
     opacity: 86%;
 }
@@ -29,9 +29,13 @@ p {
     margin-top: 200px;
 }
 
+.bot {
+    margin-bottom: 200px !important;
+}
+
 .description-text {
     font-weight: 500;
-    font-size: 23px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 100px;
 }
@@ -156,7 +160,7 @@ p {
     margin-top: 100px;
 }
 
-.whatDoCards p, .techstack p {
+.whatDoCards p, .techstack p, .experience-title {
     font-weight: 600;
     opacity: 100%;
 }
@@ -167,6 +171,10 @@ p {
     border-radius: 30px;
     margin-left: 50px;
     width: 18.667%;
+}
+
+.blue-text {
+    color: #33ffcd;
 }
 
 .card-icon {
@@ -194,10 +202,15 @@ p {
     width: max-content;
 }
 
+.left-tech-col{
+    border-right: 3px solid #33ffcd;
+}
+
+
 .readMoreBtn {
     margin-top: 50px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -247,16 +260,11 @@ p {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .techstack {
     margin-top: 100px;
-    columns: 2;
-    /* column-width: 1px; */
-    column-gap: 100px;
-    column-rule: 3px solid rgba(51, 255, 205, 0.3);
-    width: 50%;
     position: relative;
     min-height: 400px;
 }
@@ -268,6 +276,7 @@ p {
     border-radius: 30px;
     margin: 15px 0px 30px 15px;
     font-weight: 500 !important;
+    text-align: center;
 }
 
 .framework:first-child {
@@ -283,6 +292,8 @@ p {
     position: absolute;
     top: -10%;
     left: -33%;
+    width: 150px;
+    height: 150px;
 }
 
 .contact-container {
@@ -297,7 +308,7 @@ p {
     color: white;
 }
 
-.copy-btn{
+.copy-btn {
     border: 2px solid #33ffcd;
     padding: 8px 20px;
     border-radius: 30px;
@@ -339,11 +350,8 @@ p {
     margin-bottom: 50px;
 }
 
-.contact-container label{
-
+.contact-container label {
     font-weight: 900;
-    
-
 }
 
 .contact-container input::placeholder {
@@ -356,10 +364,170 @@ p {
     min-height: 170px;
 }
 
-
-footer{
+footer {
     background-color: #242424;
     padding: 0 150px;
     min-height: 180px;
     margin-top: 200px;
+}
+
+.experience-title {
+    display: none;
+}
+
+/* mobiles */
+
+@media screen and (max-width: 600px) {
+    html {
+        overflow-x: scroll;
+        /* max-width: 360px; */
+    }
+    .navbar {
+        padding: 20px;
+        background-color: transparent;
+    }
+    .navbar-brand {
+        font-size: 1em;
+    }
+    .navbar-toggler {
+        border-radius: 50px;
+        padding: 10px;
+        background-color: #242424;
+        box-shadow: -10px 6px 0px rgba(0, 0, 0, 0.25);
+    }
+    .landing-container {
+        padding-left: 0px;
+        background-image: url("../static/images/mobile-landing-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .landing-text {
+        margin: auto;
+    }
+    .landing-text h1, .landing-text h3 {
+        padding: 5px;
+        max-width: 280px;
+        width: max-content;
+        margin: auto;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+    h1, h2, h3, h5 {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+    }
+    h5 {
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .whatdo-text p {
+        font-size: 17px;
+    }
+    #myTitles {
+        font-size: 23px;
+    }
+    .red-btn img, .blue-btn img {
+        width: auto;
+        height: 15px;
+        margin-left: 8px;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 1em;
+    }
+    .landing-btn, .readMoreBtn {
+        margin: 50px auto;
+        background-image: none;
+    }
+    .red-btn {
+        border: 2px solid #FF0000;
+    }
+    .blue-btn {
+        border: 2px solid #33FFCD;
+    }
+    .whatDoCards {
+        margin-top: 30px;
+    }
+    .whatDoCard {
+        margin: 0;
+        padding: 15px;
+        width: 41%;
+    }
+    .fr {
+        margin-left: 15px;
+    }
+    .card-icon {
+        width: 30px;
+        height: auto;
+    }
+    .sec {
+        margin-top: 100px;
+    }
+    .experience, .desktop-text {
+        display: none !important;
+    }
+    .experience-title {
+        display: block;
+    }
+    .description-text {
+        margin-bottom: 100px;
+        font-size: 1em;
+        width: 90% !important;
+    }
+    .projects-container {
+        padding: 20px;
+        width: 90%;
+    }
+    .projects-container p {
+        text-align: center;
+    }
+    .project-image {
+        margin-bottom: 30px;
+    }
+    .project-item {
+        margin-bottom: 100px;
+    }
+    .techSkills {
+        padding: 15px;
+    }
+    .techtab {
+        margin: auto;
+    }
+    .tech-tabs {
+        padding: 10px 10px;
+        width: auto;
+    }
+    .tab-icon {
+        display: none;
+    }
+    .techstack {
+        margin-top: 30px;
+        /* column-rule: 2px solid rgba(51, 255, 205, 0.3); */
+        width: 100%;
+        min-height: 330px;
+    }
+    .techstack p {
+        margin-bottom: 10px;
+    }
+    .framework {
+        padding: 8px;
+        margin: 0;
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .left-tech-col{
+        padding-left: 0;
+        border-right: 1px solid #33ffcd;
+    }
+
+    .right-tech-col{
+        padding-right: 0;
+    }
 }
