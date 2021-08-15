@@ -22,7 +22,7 @@
     <title>Attendance Trackers</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-sm">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Saleh Fahmy.</a>
         <button
@@ -65,48 +65,61 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-6 d-flex justify-content-center">
-          <p class="m-auto">
-            The web app is part of an HR app i’ve worked on, It’s Responsible
-            for importing employees attendances data from FP machine (currently
-            it can integrate with multiple ZTeco machines).
-          </p>
-        </div>
-
-        <div class="col-6 d-flex">
+        <div class="col-12 col-md-6 d-flex mb-5">
           <img
-            class="ms-auto"
+            class="me-auto img-fluid"
             src="../static/images/projects/attendance/intro.png"
             alt=""
             srcset=""
           />
         </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <p class="m-auto text-center text-md-start">
+            The web app is part of an HR app i’ve worked on, It’s Responsible
+            for importing employees attendances data from FP machine (currently
+            it can integrate with multiple ZTeco machines).
+          </p>
+        </div>
       </div>
 
-      <h2>MY ROLE:</h2>
-      <p class="text-start w-50">
-        I am the fullstack developer, My goal was to implement the requested
-        custom features this app needs.
-      </p>
+      <div class="row mt-5 mt-md-0">
+        <div class="col-12 col-md-6">
+          <h2 class=" text-center text-md-start">MY ROLE:</h2>
+          <p class="text-start text-center text-md-start">
+            I am the fullstack developer, My goal was to implement the requested
+            custom features this app needs.
+          </p>
+        </div>
 
-      <p class="mb-5 text-center">
+        <div class="col-12 col-md-6">
+          <p class="mt-md-0">
+            <span class="bold-white">Tech Used: </span> for the backend, it's
+            built using the <span class="bold-red"> Flask </span> framework,
+            <span class="bold-red">postgreSQL </span> for the database, and the
+            frontend is built with <span class="bold-red">VueJS </span> and
+            <span class="bold-red"> Bootstrap </span>.
+          </p>
+        </div>
+      </div>
+      <p class="mb-5 text-center mt-0">
         these main custom features include options like where the responsible
-        admin can manage custom schedules and rules, and assign them to all or specific employees.
+        admin can manage custom schedules and rules, and assign them to all or
+        specific employees.
       </p>
 
       <div class="row">
-        <div class="col-6 d-flex">
+        <div class="col-12 col-md-6 mb-1 d-flex">
           <img
-            class="m-auto"
+            class="m-auto img-fluid"
             src="../static/images/projects/attendance/schedule1.png"
             alt=""
             srcset=""
           />
         </div>
 
-        <div class="col-6 d-flex">
+        <div class="col-12 col-md-6 d-flex">
           <img
-            class="m-auto"
+            class="m-auto img-fluid"
             src="../static/images/projects/attendance/schedule2.png"
             alt=""
             srcset=""
@@ -115,7 +128,7 @@
       </div>
 
       <div class="row sec bot">
-        <div class="col-6 d-flex">
+        <div class="col-12 col-md-6 d-flex">
           <p class="my-auto">
             And as
             <span class="bold-white"
@@ -137,16 +150,16 @@
           </p>
         </div>
 
-        <div class="col-6 d-flex flex-column">
+        <div class="col-12 col-md-6 d-flex flex-column">
           <img
-            class="ms-auto mb-5"
+            class="ms-auto mb-5 img-fluid"
             src="../static/images/projects/attendance/report1.png"
             alt=""
             srcset=""
           />
 
           <img
-            class="ms-auto"
+            class="ms-auto img-fluid"
             src="../static/images/projects/attendance/report2.png"
             alt=""
             srcset=""
@@ -154,21 +167,13 @@
         </div>
       </div>
 
-      <h2>CHALLENGES</h2>
+      <h2 class="text-center text-md-start">CHALLENGES</h2>
 
-      <p>
+      <p class="text-center text-md-start">
         One of the challenges for this project was figuring out and planning the
         right workflow to integrate my API with the FP machine API to import the
         needed data and reformat it in an optimized data structure other areas
         of this app can use.
-      </p>
-
-      <p>
-        <span class="bold-white">Tech Used: </span> for the backend, it's built
-        using the <span class="bold-red"> Flask </span> framework,
-        <span class="bold-red">postgreSQL </span> for the database, and the
-        frontend is built with <span class="bold-red">VueJS </span> and
-        <span class="bold-red"> Bootstrap </span>.
       </p>
     </div>
 

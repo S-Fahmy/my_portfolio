@@ -3,11 +3,14 @@ window.onload = () => {
 
   if(width < 450){
     const techTags = document.querySelectorAll(".tech-tag");
+    const contactTitle = document.querySelector(".contact-container");
     let i = 0
     document.querySelectorAll('.project-image').forEach(elem =>{
       techTags[i].after(elem);
       i++;
     });
+
+    contactTitle.before(document.querySelector('.reviews-container'));
   }
 };
 

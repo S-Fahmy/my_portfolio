@@ -375,6 +375,83 @@ footer {
     display: none;
 }
 
+/* tablets */
+
+@media screen and (max-width: 1000px) {
+
+    .navbar {
+        padding: 20px;
+        background-color: transparent;
+    }
+    .navbar-brand {
+        font-size: 1em;
+    }
+    .navbar-toggler {
+        border-radius: 50px;
+        padding: 10px;
+        background-color: #242424;
+        box-shadow: -10px 6px 0px rgba(0, 0, 0, 0.25);
+    }
+    .landing-container {
+        padding: 5%;
+        background-position-x: 45%;
+        position: relative;
+    }
+    .landing-text {
+        margin: auto;
+    }
+    .landing-text h1, .landing-text h3 {
+        padding: 5px;
+        width: max-content;
+        margin-bottom: 30px;
+    }
+    #myTitles, h1, h2, h3 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .whatdo-text p {
+        font-size: 20px;
+    }
+
+    .whatDoCard {
+        padding: 30px 15px;
+        margin-left: 20px;
+        margin: 0;
+        width: 30%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .whatDoCards{
+        padding: 3%;
+    }
+
+    .description-text{
+        width: 75% !important;
+    }
+
+    .projects-container {
+
+        padding: 2.21%;
+        width: 95%;
+    }
+
+    .techSkills {
+        padding: 3%;
+    }
+
+    .tech-tabs {
+        padding: 20px 15px;
+    }
+}
+
 /* mobiles */
 
 @media screen and (max-width: 600px) {
@@ -529,5 +606,37 @@ footer {
 
     .right-tech-col{
         padding-right: 0;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .reviews-title {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .quotes{
+        width: 30px;
+        height: 21px;
+    }
+
+    .email{
+        margin-top: 10px;
+    }
+
+    .copy-btn{
+        padding: 8px 20px;
+        width: 100%;
+    }
+
+    .send-btn{
+        background: none;
+        width: 100%;
+    }
+
+    .reviews-container{
+        padding: 12px;
     }
 }
