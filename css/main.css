@@ -41,7 +41,7 @@ p {
 }
 
 .navbar {
-    padding: 50px 150px;
+    padding: 20px 150px;
 }
 
 .navbar ul li a {
@@ -61,6 +61,7 @@ p {
     padding-left: 150px;
     height: 100vh;
     background-image: url("../static/images/landing-bg.png");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,10 +71,15 @@ p {
 .landing-text {
     line-height: 49px;
     letter-spacing: 0.2em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    pointer-events: none;
 }
 
 .landing-text h1, .bold-red {
     font-weight: 900 !important;
+    transform: scaleX(1);
 }
 
 .landing-text h1, .landing-text h3 {
@@ -82,6 +88,14 @@ p {
     width: max-content;
     margin-bottom: 30px;
     font-weight: 500;
+}
+
+.landing-text .animgrp{
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+}
+
+.landing-text .animgrp .bold-red{
+   opacity: 0;
 }
 
 .bold-red {
@@ -100,6 +114,7 @@ p {
     border: none;
     outline: none !important;
     outline-style: none;
+    pointer-events: all;
 }
 
 .btn:hover {
@@ -202,10 +217,9 @@ p {
     width: max-content;
 }
 
-.left-tech-col{
+.left-tech-col {
     border-right: 3px solid #33ffcd;
 }
-
 
 .readMoreBtn {
     margin-top: 50px;
@@ -344,20 +358,28 @@ p {
 }
 
 .contact-container input, .contact-container textarea {
-    background-color: #DDDDDD;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: none;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 50px;
+    color: white;
 }
 
 .contact-container label {
-    font-weight: 900;
+    font-weight: 500;
+}
+
+.contact-container input:focus, .contact-container textarea:focus {
+    border: 2px solid #33ffcd;
+    outline: none;
+    outline-style: none;
 }
 
 .contact-container input::placeholder {
     font-weight: 500;
     font-size: 16px;
-    color: rgba(22, 22, 22, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 #message {
@@ -378,7 +400,6 @@ footer {
 /* tablets */
 
 @media screen and (max-width: 1000px) {
-
     .navbar {
         padding: 20px;
         background-color: transparent;
@@ -415,11 +436,9 @@ footer {
     p {
         font-size: 16px;
     }
-
     .whatdo-text p {
         font-size: 20px;
     }
-
     .whatDoCard {
         padding: 30px 15px;
         margin-left: 20px;
@@ -428,27 +447,31 @@ footer {
         margin-right: auto;
         margin-left: auto;
     }
-
-    .whatDoCards{
+    .whatDoCards {
         padding: 3%;
     }
-
-    .description-text{
+    .description-text {
         width: 75% !important;
     }
-
     .projects-container {
-
         padding: 2.21%;
         width: 95%;
     }
-
     .techSkills {
         padding: 3%;
     }
-
     .tech-tabs {
         padding: 20px 15px;
+    }
+    .contact-container {
+        width: 95%;
+    }
+    .quotes {
+        width: 30px;
+        height: 21px;
+    }
+    .reviews-title {
+        font-size: 18px;
     }
 }
 
@@ -481,7 +504,10 @@ footer {
         position: relative;
     }
     .landing-text {
-        margin: auto;
+        /* margin: auto; */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 320px;
     }
     .landing-text h1, .landing-text h3 {
         padding: 5px;
@@ -577,7 +603,7 @@ footer {
         margin: auto;
     }
     .tech-tabs {
-        padding: 10px 10px;
+        padding: 0 10px;
         width: auto;
     }
     .tab-icon {
@@ -598,45 +624,32 @@ footer {
         margin-left: 0;
         font-size: 12px;
     }
-
-    .left-tech-col{
+    .left-tech-col {
         padding-left: 0;
         border-right: 1px solid #33ffcd;
     }
-
-    .right-tech-col{
+    .right-tech-col {
         padding-right: 0;
     }
-
     .contact-container {
         width: 100%;
     }
-
     .reviews-title {
         font-size: 1em;
         text-align: center;
     }
-
-    .quotes{
-        width: 30px;
-        height: 21px;
-    }
-
-    .email{
+    .email {
         margin-top: 10px;
     }
-
-    .copy-btn{
+    .copy-btn {
         padding: 8px 20px;
         width: 100%;
     }
-
-    .send-btn{
+    .send-btn {
         background: none;
         width: 100%;
     }
-
-    .reviews-container{
+    .reviews-container {
         padding: 12px;
     }
 }
