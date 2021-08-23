@@ -22,115 +22,93 @@
     <link rel="stylesheet" href="../css/projects.css" />
     <title>IST</title>
   </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Saleh Fahmy.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WHAT I DO</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">MY WORKS</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">TECH STACK</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <h1>IST Industrial Services and Technology website</h1>
-
-    <div class="container">
-      <div class="row intro-wrapper">
-        <div class="col-12 col-md-6">
-          <p class="mt-0 mb-5 text-center text-md-start">
-            IST is a company working in the industrial field and the main
-            purpose of the website is to to display the company’s profile,
-            information about their services, team introduction, contact
-            informations and products.
-          </p>
-
-          <h2 class="text-center text-md-start">MY ROLE:</h2>
-          <p class="mt-5 mb-0 text-center text-md-start">
-            <span class="bold-white"
-              >I was responsible for the design and the development of the
-              website.
-            </span>
-            <br />
-            I worked along with the Manager and the engineering team to achieve
-            the design they needed to showcase their content, their work, the
-            company’s goal and products.
-            <br /><br />
-            <span class="bold-red">Figma</span> was used to design the UI and is
-            built with <span class="bold-red">html, css and javascript</span>.
-          </p>
-        </div>
-
-        <div class="col-12 col-md-6 d-flex mt-5 mt-md-0">
-          <img
-            class="ms-auto mb-md-auto my-lg-auto img-fluid"
-            src="../static/images/projects/ist/intro.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-      </div>
-
-      <h2>CHALLENGES:</h2>
-      <p class="mb-5">
-        As any other project this one had it’s challenges, one of them is that
-        we have a page to build that showcases a product with multiple parts,
-        and each part has many high resolution images and content that needed to
-        be displayed. <br />
-        So i decided to use an accordion like effect and and use much smaller
-        resolution for the images thumbnails with an zoom box that loads the
-        original images.
-      </p>
-
-      <div class="row">
-        <div class="col-12 col-md-6 d-flex justify-content-center mb-5 mb-md-0">
-          <img
-            class="img-fluid"
-            src="../static/images/projects/ist/challenges1.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-          <img
-            class="img-fluid"
-            src="../static/images/projects/ist/challenges2.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-      </div>
+  <body data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen"></div>
     </div>
 
+    <main data-barba="container" data-barba-namespace="projects">
+      <link rel="stylesheet" href="../css/projects.css" />
+
+      <nav class="fixed-top mb-0">
+        <a class="backtomain" aria-current="page" href="/new/"
+          ><img src="../static/icons/ArrowDown.png" alt="" srcset="" /> Back to
+          main.</a
+        >
+      </nav>
+
+      <h1>IST Industrial Services and Technology website</h1>
+
+      <div class="container">
+        <div class="row intro-wrapper">
+          <div class="col-12 col-md-6">
+            <p class="mt-0 mb-5 text-center text-md-start">
+              IST is a company working in the industrial field and the main
+              purpose of the website is to to display the company’s profile,
+              information about their services, team introduction, contact
+              informations and products.
+            </p>
+
+            <h2 class="text-center text-md-start">MY ROLE:</h2>
+            <p class="mt-5 mb-0 text-center text-md-start">
+              <span class="bold-white"
+                >I was responsible for the design and the development of the
+                website.
+              </span>
+              <br />
+              I worked along with the Manager and the engineering team to
+              achieve the design they needed to showcase their content, their
+              work, the company’s goal and products.
+              <br /><br />
+              <span class="bold-red">Figma</span> was used to design the UI and
+              is built with
+              <span class="bold-red">html, css and javascript</span>.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex mt-5 mt-md-0">
+            <img
+              class="ms-auto mb-md-auto my-lg-auto img-fluid"
+              src="../static/images/projects/ist/intro.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+
+        <h2>CHALLENGES:</h2>
+        <p class="mb-5">
+          As any other project this one had it’s challenges, one of them is that
+          we have a page to build that showcases a product with multiple parts,
+          and each part has many high resolution images and content that needed
+          to be displayed. <br />
+          So i decided to use an accordion like effect and and use much smaller
+          resolution for the images thumbnails with an zoom box that loads the
+          original images.
+        </p>
+
+        <div class="row">
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center mb-5 mb-md-0"
+          >
+            <img
+              class="img-fluid"
+              src="../static/images/projects/ist/challenges1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img
+              class="img-fluid"
+              src="../static/images/projects/ist/challenges2.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="d-flex">
       <p class="my-auto">Saleh Fahmy.</p>
 
@@ -147,5 +125,6 @@
         srcset=""
       />
     </footer>
+    <script src="https://unpkg.com/@barba/core"></script>
   </body>
 </html>

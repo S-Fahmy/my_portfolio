@@ -21,7 +21,14 @@
 
     <title>Saleh Fahmy</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
+
+    <div class="load-container">
+      <div class="loading-screen"></div>
+  </div>
+
+    <main data-barba="container" data-barba-namespace="home">
+
     <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Saleh Fahmy.</a>
@@ -39,530 +46,532 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              <a class="nav-link active" aria-current="page" href="javascript:;" onclick="scrollToSection('#landing')">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">WHAT I DO</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">MY WORKS</a>
+              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#whatIdo')">WHAT I DO</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">TECH STACK</a>
+              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#myWorks')">MY WORKS</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#techStack')">TECH STACK</a>
+            </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#aboutMe')">ABOUT ME</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#contactMe')">CONTACT</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+        <section id="landing" class="landing-container d-flex">
+          <div class="landing-text my-auto">
+            <h1>HELLO!</h1>
 
-    <section id="landing" class="landing-container d-flex">
-      <div class="landing-text my-auto">
-        <h1>HELLO!</h1>
+            <div class="animgrp">
+            <h3>I’M A SOFTWARE ENGINEER</h3>
 
-        <div class="animgrp">
-        <h3>I’M A SOFTWARE ENGINEER</h3>
-
-        <h3>
-          I’M WORKING AS A <span class="bold-red"> FULLSTACK DEVELOPER </span>
-        </h3>
-      </div>
-        <button class="btn red-btn landing-btn">
-          About Me
-          <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
-        </button>
-        <button class="btn blue-btn landing-btn">
-          Check my Works
-          <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
-        </button>
-      </div>
-
-      <div class="social-icons">
-        <a class=""
-          ><img class="btn-icon" src="static/icons/github.png" alt=""
-        /></a>
-        <a class="">
-          <img class="btn-icon" src="static/icons/email.png" alt=""
-        /></a>
-      </div>
-    </section>
-
-    <section class="whatdo sec">
-      <div class="row gx-0 justify-content-center">
-        <div class="col-12 col-md-3 d-flex">
-          <h4 id="myTitles" class="m-auto">WHAT I DO</h4>
-        </div>
-        <div class="col-2 col-md-1"><p class="text-end brackets">{</p></div>
-
-        <div class="col-8 col-md-6 col-lg-4 d-flex mb-3 whatdo-text">
-          <div class="m-auto">
-            <h5 class="text-center nmu">NICE TO MEET YOU!</h5>
-
-            <p class="text-center">
-              As a fullstack developer, i enjoy doing many things in my work
-              ranging from planning/ building and coding the backend for web
-              apps to designing and coding UIs.
-            </p>
+            <h3>
+              I’M WORKING AS A <span class="bold-red"> FULLSTACK DEVELOPER </span>
+            </h3>
           </div>
-        </div>
-
-        <div class="col-2 col-md-1"><p class="brackets text-start">}</p></div>
-      </div>
-
-      <p class="text-center m-auto w-75 experience-title">
-        I have <span class="blue-text">4+ years</span> of Experience building &
-        developing:
-      </p>
-
-      <div class="row gx-3 justify-content-center whatDoCards">
-        <div class="col-6 col-md-4 col-lg-2 whatDoCard d-flex flex-column">
-          <img
-            class="card-icon mx-auto"
-            src=""
-            alt="backend"
-            srcset="static/icons/backend.png"
-          />
-          <p class="text-center my-auto">
-            <span class="desktop-text">experience building</span> backend
-            applications.
-          </p>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2 whatDoCard d-flex flex-column fr">
-          <img
-            class="card-icon mx-auto"
-            src=""
-            alt="frontend"
-            srcset="static/icons/frontend.png"
-          />
-          <p class="text-center my-auto">
-            <span class="desktop-text"> experience building responsive</span>
-            frontend designs.
-          </p>
-        </div>
-
-        <div class="col-2 col-md-4 col-lg-2 whatDoCard d-flex flex-column experience">
-          <img
-            class="card-icon mx-auto"
-            src=""
-            alt="experience"
-            srcset="static/icons/experience.png"
-          />
-          <p class="text-center my-auto">4+ years of experience.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="myworks sec">
-      <h4 id="myTitles" class="m-auto">MY WORKS</h4>
-      <h6 class="description-text text-center w-25 mx-auto">
-        Selected websites and web applications projects that i have recently
-        worked on
-      </h6>
-
-      <div class="container-fluid projects-container">
-        <div class="row project-item justify-content-center">
-          <div class="col-12 col-md project-description">
-            <h5 class="text-center text-md-start">Aviram Image Recognition</h5>
-
-            <div class="tech-tag mx-auto mx-md-0">Fullstack Development</div>
-
-            <p class="project-text mb-0">
-              Aviram is a web application powered by an Image recognition AI
-              model aimed towards photographers with different features to help
-              them store, sort and group similar looking images, visual search
-              images, picking their favorite images from different gallery sets
-              and Select and share images with others to vote on their
-              favorites.
-            </p>
-
-            <div class="d-flex">
-              <a
-                class="btn red-btn readMoreBtn mx-auto mx-md-0"
-                href="projects/aviram-image-recognition.html"
-                >READ MORE</a
-              >
-            </div>
-          </div>
-
-          <div class="col-12 col-md d-flex project-image">
-            <img
-              src="static/images/project-aviram.png"
-              alt="aviram"
-              class="ms-auto my-auto img-fluid"
-            />
-          </div>
-        </div>
-
-        <!-- project ends -->
-
-        <div class="row project-item justify-content-center">
-
-          <div class="col-12 col-md d-flex project-image">
-            <img
-              src="static/images/project-ist.png"
-              alt="ist"
-              class="me-auto my-auto img-fluid"
-            />
-          </div>
-          <div class="col-12 col-md project-description">
-            <h5 class="text-center text-md-start">IST industries website</h5>
-
-            <div class="tech-tag mx-auto mx-md-0">Frontend Development</div>
-
-            <p class="project-text mb-0">
-              IST is a company working in the industrial field and the main
-              purpose of the website is to to display the company’s profile,
-              information about their services, team introduction, contact
-              informations and products.
-            </p>
-            <div class="d-flex">
-              <a
-                class="btn red-btn readMoreBtn mx-auto mx-md-0"
-                href="projects/ist-website.html"
-                >READ MORE</a
-              >
-            </div>
-          </div>
-
-        </div>
-        <!-- project ends -->
-
-        <div class="row project-item justify-content-center mb-0">
-          <div class="col-12 col-md project-description">
-            <h5 class="text-center text-md-start">
-              Attendance & work hours tracker web app
-            </h5>
-
-            <div class="tech-tag mx-auto mx-md-0">Fullstack Development</div>
-
-            <p class="project-text mb-0">
-              This service is part of an HR app i’ve worked on, It’s Responsible
-              for importing employees attendances data from FP machine
-              (currently it can integrate with multiple ZTeco machines).
-            </p>
-
-            <div class="d-flex">
-              <a
-                class="btn red-btn readMoreBtn mx-auto mx-md-0"
-                href="projects/attendance-tracker.html"
-                >READ MORE</a
-              >
-            </div>
-          </div>
-
-          <div class="col-12 col-md d-flex project-image">
-            <img
-              src="static/images/project-attendance.png"
-              alt="aviram"
-              class="ms-auto my-auto img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="aboutme sec d-flex flex-column">
-      <h4 id="myTitles" class="title-margin m-auto">SOME MOTO HERE</h4>
-      <p class="m-auto w-75">
-        i have a diverse set of skills that i have accumulated over the years,
-        taking part building different projects in my previous job like a
-        backend system for HR, invoicing, PO and employees attendances/tracking
-        web application for the first company i worked at.
-        <br />
-        <br />
-        I’m currently working on building my freelancing career base.
-        <span class="semi-bold-text"
-          >If you are looking to hire a developer to build a website or a web
-          application for you, you can
-          <a class="url" href="#"> contact me here </a></span
-        >.
-      </p>
-    </section>
-
-    <section class="techSkills sec">
-      <h4 id="myTitles" class="m-auto">TECHNICAL SKILLS</h4>
-      <h6 class="description-text text-center mx-auto">
-        the languages, frameworks, databases and other tools that i’m currently
-        using in my work
-      </h6>
-
-      <div class="tech-tabs d-flex justify-content-center mx-auto">
-        <button
-          class="btn techtab active"
-          onclick="displayTab(event, '#langs')"
-        >
-          Languages & Frameworks
-        </button>
-        <button class="btn techtab" onclick="displayTab(event, '#cloud')">
-          Cloud computing
-        </button>
-        <button class="btn techtab" onclick="displayTab(event, '#ux')">
-          UI/UX tools
-        </button>
-      </div>
-
-      <div id="langs" class="techstack row justify-content-center mx-auto">
-        <img class="tab-icon" src="static/icons/1.png" alt="" />
-
-        <div class="col offset-md-0 offset-lg-1 col-md-5 col-lg-3 left-tech-col">
-
-        <p class="text-start">Python</p>
-        <div class="frameworks row g-1 g-md-3">
-          <div class="col-6 col-md-5 col-lg-3  ">
-            <p class="framework">Flask</p>
-          </div>
-          <div class="col-6 col-md-5 col-lg-3  ">
-            <p class="framework">Django</p>
-          </div>
-        </div>
-        <p class="text-start">Java</p>
-
-        <div class="frameworks row g-0">
-          <div class="col-7 col-md-5 col-lg-3">
-            <p class="framework">Java EE</p>
-          </div>
-        </div>
-
-        <p class="text-start">PHP</p>
-        <div class="frameworks row g-1 g-md-3">
-          <div class="col-5 col-md-5 col-lg-4">
-            <p class="framework">Laravel</p>
-            </div>
-            <div class="col-7 col-md-6 col-lg-4  ">
-            <p class="framework">CodeIgniter</p>
-          </div>
-        </div>
-</div>
-
-        <div class="col offset-md-1 offset-lg-1 col-md-5 col-lg-3 right-tech-col">
-        <p class="text-start">Databases</p>
-        <div class="frameworks row g-1 g-md-3">
-
-          <div class="col-6 col-md-5 col-lg-4 ">
-            <p class="framework">mySQL</p>
-          </div>
-
-          <div class="col-6 col-md-5 col-lg-4 ">
-            <p class="framework">Redis</p>
-          </div>
-          <div class="col-7 col-md-6 col-lg-4 ">
-            <p class="framework">PostgreSQL</p>
-          </div>
-
-
-        </div>
-
-        <p class="text-start">Javascript</p>
-        <div class="frameworks row g-1 g-md-3">
-          <div class="col-6 col-md-5 col-lg-4">
-            <p class="framework">VueJS</p>
-            </div>
-            <div class="col-6 col-md-5 col-lg-4">
-
-            <p class="framework">JQuery</p>
-          </div>
-        </div>
-
-        <p class="text-start">HTML & CSS</p>
-        <div class="frameworks row g-1 g-md-3">
-          <div class="col-7 col-md-5 col-lg-4 ">
-            <p class="framework">Bootstrap</p>
-            </div>
-            <div class="col-5 col-md-5 col-lg-3 ">
-
-            <p class="framework">Bulma</p>
-            </div>
-            <div class="col-6 col-md-5 col-lg-4">
-
-            <p class="framework">Vuetify</p>
-          </div>
-        </div>
-        </div>
-
-</div>
-        <!-- ------------- -->
-
-        <div id="cloud" class="techstack row justify-content-center hidden mx-auto">
-          <img class="tab-icon" src="static/icons/2.png" alt="" />
-
-          <div class="col offset-md-0 offset-lg-1 col-md-5 col-lg-3 col left-tech-col">
-
-          <p class="text-start">Amazon web services</p>
-          <div class="frameworks row g-1 g-md-3">
-            <div class="col-6 col-md-5 col-lg-4">
-            <p class="framework">EC2</p>
-          </div>
-
-          <div class="col-6 col-md-5 col-lg-4">
-            <p class="framework">ELB</p>
-          </div>
-
-          <div class="col-7 col-md-6 col-lg-4">
-            <p class="framework">S3 storage</p>
-          </div>
-          
-          </div>
-
-          </div>
-
-          <div class="col offset-md-1 col-md-5 col-lg-3 right-tech-col">
-          <p class="text-start">Google Cloud</p>
-
-          <div class="frameworks row g-1 g-md-3">
-      
-            <div class="col-8 col-md-6 col-lg-5">
-              <p class="framework">App Engine</p>
-            </div>
-
-            <div class="col-4 col-md-5 col-lg-3">
-              <p class="framework">GCS</p>
-            </div>
-
-            <div class="col-7 col-md-6 col-lg-4">
-              <p class="framework">Cloud SQL</p>
-            </div>
-            <div class="col-5 col-md-6 col-lg-4">
-              <p class="framework">Pub/Sub</p>
-            </div>
-            <div class="col col-md-9 col-lg-8">
-              <p class="framework">Cloud Tasks queues</p>
-            </div>
-
-
-
-          </div>
-        </div>
-        </div>
-
-        <!-- ----------------- -->
-
-        <div id="ux" class="techstack row justify-content-center hidden mx-auto">
-          <img class="tab-icon" src="static/icons/3.png" alt="" />
-
-          <div class="col offset-md-1 col-md-2">
-            <p class="text-start">Figma</p>
-
-          </div>
-          
-          <div class="col col-md-2">
-            <p class="text-start">Adobe XD</p>
-
-          </div>
-          
-          <div class="col col-md-2">
-            <p class="text-start">Photoshop</p>
-
-          </div>
-          
-
-        </div>
-      </div>
-    </section>
-
-    <section class="container-fluid contact-container sec">
-      <div class="row contact-container m-auto">
-        <div class="col-12 col-md-6 col-lg-5 justify-content-center d-flex flex-column">
-
-          <h4 id="myTitles" class="text-center text-md-start">CONTACT</h4>
-          <div class="row mb-5">
-            <div class="col-3 col-md-4 col-lg-2 me-md-2 me-lg-0 d-flex">
-              <p class="my-auto mx-lg-auto">Email:</p>
-            </div>
-
-            <div class="col-9 col-md-5 d-flex justify-content-center">
-              <a href="mailto:saleh.fahmy2@gmail.com" class="email m-auto"
-              >saleh.fahmy2@gmail.com
-            </a>
-            </div>
-
-            <div class="col d-flex justify-content-end justify-content-md-center justify-content-lg-start mt-3 mt-lg-auto">
-              <button class="btn btn copy-btn" onclick="copyEmail()">Copy</button>
-
-            </div>
-          </div>
-
-          
-     
-
-          <div class="reviews-container mt-5 mb-5 mt-md-auto mb-md-0">
-            <h6 class="reviews-title text-start">
-              <img
-                class="me-5 me-md-3 quotes"
-                src="static/icons/quotes1.png"
-                alt=""
-                srcset=""
-              />
-              Feedback & Reviews
-            </h6>
-            <p class="text-center reviews-text">
-              Saleh F. recreated my website after it had been lost. He provided
-              excellent work and service, even beyond what I asked for. He was
-              proactive and engaged, and I would definitely recommend him.
-            </p>
-            <p class="reviews-text client-name text-end text-md-start">
-              - client one
-              <img
-                class="float-end ms-3 mt-2 quotes"
-                src="static/icons/quotes2.png"
-                alt=""
-                srcset=""
-              />
-            </p>
-          </div>
-        </div>
-
-        <div class="offset-0 offset-md-1 offset-lg-2 col-12 col-md-5 contact-form-wrapper">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Your Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                aria-describedby="name"
-                placeholder="First/Last name..."
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputEmail1">Your E-mail*</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                aria-describedby="emailHelp"
-                required
-                placeholder="So i can reach you back..."
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputEmail1">Your Message*</label>
-              <textarea
-                class="form-control"
-                id="message"
-                name="message"
-                aria-describedby="message"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn red-btn m-0 float-end send-btn">
-              Send E-mail
+            <button class="btn red-btn landing-btn">
+              About Me
+              <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
             </button>
-          </form>
-        </div>
-      </div>
-    </section>
+            <button class="btn blue-btn landing-btn">
+              Check my Works
+              <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
+            </button>
+          </div>
 
+          <div class="social-icons">
+            <a class=""
+              ><img class="btn-icon" src="static/icons/github.png" alt=""
+            /></a>
+            <a class="">
+              <img class="btn-icon" src="static/icons/email.png" alt=""
+            /></a>
+          </div>
+        </section>
+
+        <section id="whatIdo" class="whatdo sec">
+          <div class="row gx-0 justify-content-center">
+            <div class="col-12 col-md-3 d-flex">
+              <h4 id="myTitles" class="m-auto">WHAT I DO</h4>
+            </div>
+
+            <div class="col-8 col-md-6 col-lg-4 d-flex mb-3 whatdo-text">
+              <div class="m-auto">
+                <h5 class="text-center nmu">NICE TO MEET YOU!</h5>
+
+                <p class="text-center">
+                  As a fullstack developer, i enjoy doing many things in my work
+                  ranging from planning/ building and coding the backend for web
+                  apps to designing and coding UIs.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="text-center m-auto w-75 experience-title">
+            I have <span class="blue-text">4+ years</span> of Experience building &
+            developing:
+          </p>
+
+          <div class="row gx-3 justify-content-center whatDoCards">
+            <div class="col-6 col-md-4 col-lg-2 whatDoCard d-flex flex-column">
+              <img
+                class="card-icon mx-auto"
+                src=""
+                alt="backend"
+                srcset="static/icons/backend.png"
+              />
+              <p class="text-center my-auto">
+                <span class="desktop-text">experience building</span> backend
+                applications.
+              </p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 whatDoCard d-flex flex-column fr">
+              <img
+                class="card-icon mx-auto"
+                src=""
+                alt="frontend"
+                srcset="static/icons/frontend.png"
+              />
+              <p class="text-center my-auto">
+                <span class="desktop-text"> experience building responsive</span>
+                frontend designs.
+              </p>
+            </div>
+
+            <div class="col-2 col-md-4 col-lg-2 whatDoCard d-flex flex-column experience">
+              <img
+                class="card-icon mx-auto"
+                src=""
+                alt="experience"
+                srcset="static/icons/experience.png"
+              />
+              <p class="text-center my-auto">4+ years of experience.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="myWorks" class="myworks sec">
+          <h4 id="myTitles" class="m-auto">MY WORKS</h4>
+          <h6 class="description-text text-center w-25 mx-auto">
+            Selected websites and web applications projects that i have recently
+            worked on
+          </h6>
+
+          <div class="container-fluid projects-container">
+            <div class="row project-item justify-content-center">
+              <div class="col-12 col-md project-description">
+                <h5 class="text-center text-md-start">Aviram Image Recognition</h5>
+
+                <div class="tech-tag mx-auto mx-md-0">Fullstack Development</div>
+
+                <p class="project-text mb-0">
+                  Aviram is a web application powered by an Image recognition AI
+                  model aimed towards photographers <span class="no-mobile"> with different features to help
+                  them store, sort and group similar looking images, visual search
+                  images, picking their favorite images from different gallery sets
+                  and Select and share images with others to vote on their
+                  favorites.</span>
+                </p>
+
+                <div class="d-flex">
+                  <a
+                    class="btn red-btn readMoreBtn mx-auto mx-md-0"
+                    href="projects/aviram-image-recognition.html"
+                    >READ MORE</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 col-md d-flex project-image">
+                <img
+                  src="static/images/project-aviram.png"
+                  alt="aviram"
+                  class="ms-auto mb-auto img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- project ends -->
+
+            <div class="row project-item justify-content-center item-2">
+
+              <div class="col-12 col-md d-flex project-image">
+                <img
+                  src="static/images/project-ist.png"
+                  alt="ist"
+                  class="me-auto mb-auto img-fluid"
+                />
+              </div>
+              <div class="col-12 col-md project-description">
+                <h5 class="text-center text-md-start">IST industries website</h5>
+
+                <div class="tech-tag mx-auto mx-md-0">Frontend Development</div>
+
+                <p class="project-text mb-0">
+                  IST is a company working in the industrial field and the main
+                  purpose of the website is to to display the company’s profile,<span class="no-mobile">
+                  information about their services, team introduction, contact
+                  informations and products.</span>
+                </p>
+                <div class="d-flex">
+                  <a
+                    class="btn red-btn readMoreBtn mx-auto mx-md-0"
+                    href="projects/ist-website.html"
+                    >READ MORE</a
+                  >
+                </div>
+              </div>
+
+            </div>
+            <!-- project ends -->
+
+            <div class="row project-item justify-content-center mb-0">
+              <div class="col-12 col-md project-description">
+                <h5 class="text-center text-md-start">
+                  Attendance & work hours tracker web app
+                </h5>
+
+                <div class="tech-tag mx-auto mx-md-0">Fullstack Development</div>
+
+                <p class="project-text mb-0">
+                  This service is part of an HR app i’ve worked on, It’s Responsible
+                  for importing employees attendances<span class="no-mobile">data from FP machine
+                  (currently it can integrate with multiple ZTeco machines).</span> 
+                </p>
+
+                <div class="d-flex">
+                  <a
+                    class="btn red-btn readMoreBtn mx-auto mx-md-0"
+                    href="projects/attendance-tracker.html"
+                    >READ MORE</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 col-md d-flex project-image">
+                <img
+                  src="static/images/project-attendance.png"
+                  alt="aviram"
+                  class="ms-auto mb-auto img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="aboutMe" class="aboutme sec d-flex flex-column">
+          <h4 id="myTitles" class="title-margin m-auto">SOME MOTO HERE</h4>
+          <p class="m-auto w-75">
+            i have a diverse set of skills that i have accumulated over the years,
+            taking part building different projects in my previous job like a
+            backend system for HR, invoicing, PO and employees attendances/tracking
+            web application for the first company i worked at.
+            <br />
+            <br />
+            I’m currently working on building my freelancing career base.
+            <span class="semi-bold-text"
+              >If you are looking to hire a developer to build a website or a web
+              application for you, you can
+              <a class="url" href="#"> contact me here </a></span
+            >.
+          </p>
+        </section>
+
+        <section id="techStack" class="techSkills sec">
+          <h4 id="myTitles" class="m-auto">TECHNICAL SKILLS</h4>
+          <h6 class="description-text text-center mx-auto">
+            the languages, frameworks, databases and other tools that i’m currently
+            using in my work
+          </h6>
+
+          <div class="tech-tabs d-flex justify-content-center mx-auto">
+            <button
+              class="btn techtab active"
+              onclick="displayTab(event, '#langs')"
+            >
+              Languages & Frameworks
+            </button>
+            <button class="btn techtab" onclick="displayTab(event, '#cloud')">
+              Cloud computing
+            </button>
+            <button class="btn techtab" onclick="displayTab(event, '#ux')">
+              UI/UX tools
+            </button>
+          </div>
+
+          <div id="langs" class="techstack row justify-content-center mx-auto">
+            <img class="tab-icon" src="static/icons/1.png" alt="" />
+
+            <div class="col offset-md-0 offset-lg-1 col-md-5 col-lg-3 left-tech-col">
+
+            <p class="text-start">Python</p>
+            <div class="frameworks row g-1 g-md-3">
+              <div class="col-6 col-md-5 col-lg-3  ">
+                <p class="framework">Flask</p>
+              </div>
+              <div class="col-6 col-md-5 col-lg-3  ">
+                <p class="framework">Django</p>
+              </div>
+            </div>
+            <p class="text-start">Java</p>
+
+            <div class="frameworks row g-0">
+              <div class="col-7 col-md-5 col-lg-3">
+                <p class="framework">Java EE</p>
+              </div>
+            </div>
+
+            <p class="text-start">PHP</p>
+            <div class="frameworks row g-1 g-md-3">
+              <div class="col-5 col-md-5 col-lg-4">
+                <p class="framework">Laravel</p>
+                </div>
+                <div class="col-7 col-md-6 col-lg-4  ">
+                <p class="framework">CodeIgniter</p>
+              </div>
+            </div>
+    </div>
+
+            <div class="col offset-md-1 offset-lg-1 col-md-5 col-lg-3 right-tech-col">
+            <p class="text-start">Databases</p>
+            <div class="frameworks row g-1 g-md-3">
+
+              <div class="col-6 col-md-5 col-lg-4 ">
+                <p class="framework">mySQL</p>
+              </div>
+
+              <div class="col-6 col-md-5 col-lg-4 ">
+                <p class="framework">Redis</p>
+              </div>
+              <div class="col-7 col-md-6 col-lg-4 ">
+                <p class="framework">PostgreSQL</p>
+              </div>
+
+
+            </div>
+
+            <p class="text-start">Javascript</p>
+            <div class="frameworks row g-1 g-md-3">
+              <div class="col-6 col-md-5 col-lg-4">
+                <p class="framework">VueJS</p>
+                </div>
+                <div class="col-6 col-md-5 col-lg-4">
+
+                <p class="framework">JQuery</p>
+              </div>
+            </div>
+
+            <p class="text-start">HTML & CSS</p>
+            <div class="frameworks row g-1 g-md-3">
+              <div class="col-7 col-md-5 col-lg-4 ">
+                <p class="framework">Bootstrap</p>
+                </div>
+                <div class="col-5 col-md-5 col-lg-3 ">
+
+                <p class="framework">Bulma</p>
+                </div>
+                <div class="col-6 col-md-5 col-lg-4">
+
+                <p class="framework">Vuetify</p>
+              </div>
+            </div>
+            </div>
+
+    </div>
+            <!-- ------------- -->
+
+            <div id="cloud" class="techstack row justify-content-center hidden mx-auto">
+              <img class="tab-icon" src="static/icons/2.png" alt="" />
+
+              <div class="col offset-md-0 offset-lg-1 col-md-5 col-lg-3 col left-tech-col">
+
+              <p class="text-start">Amazon web services</p>
+              <div class="frameworks row g-1 g-md-3">
+                <div class="col-6 col-md-5 col-lg-4">
+                <p class="framework">EC2</p>
+              </div>
+
+              <div class="col-6 col-md-5 col-lg-4">
+                <p class="framework">ELB</p>
+              </div>
+
+              <div class="col-7 col-md-6 col-lg-4">
+                <p class="framework">S3 storage</p>
+              </div>
+              
+              </div>
+
+              </div>
+
+              <div class="col offset-md-1 col-md-5 col-lg-3 right-tech-col">
+              <p class="text-start">Google Cloud</p>
+
+              <div class="frameworks row g-1 g-md-3">
+          
+                <div class="col-8 col-md-6 col-lg-5">
+                  <p class="framework">App Engine</p>
+                </div>
+
+                <div class="col-4 col-md-5 col-lg-3">
+                  <p class="framework">GCS</p>
+                </div>
+
+                <div class="col-7 col-md-6 col-lg-4">
+                  <p class="framework">Cloud SQL</p>
+                </div>
+                <div class="col-5 col-md-6 col-lg-4">
+                  <p class="framework">Pub/Sub</p>
+                </div>
+                <div class="col col-md-9 col-lg-8">
+                  <p class="framework">Cloud Tasks queues</p>
+                </div>
+
+
+
+              </div>
+            </div>
+            </div>
+
+            <!-- ----------------- -->
+
+            <div id="ux" class="techstack row justify-content-center hidden mx-auto">
+              <img class="tab-icon" src="static/icons/3.png" alt="" />
+
+              <div class="col offset-md-1 col-md-2">
+                <p class="text-start">Figma</p>
+
+              </div>
+              
+              <div class="col col-md-2">
+                <p class="text-start">Adobe XD</p>
+
+              </div>
+              
+              <div class="col col-md-2">
+                <p class="text-start">Photoshop</p>
+
+              </div>
+              
+
+            </div>
+          </div>
+        </section>
+
+        <section id="contactMe" class="container-fluid contact-container sec">
+          <div class="row contact-container m-auto">
+            <div class="col-12 col-md-6 col-lg-5 justify-content-center d-flex flex-column">
+
+              <h4 id="myTitles" class="text-center text-md-start">CONTACT</h4>
+              <div class="row mb-5">
+                <div class="col-3 col-md-4 col-lg-2 me-md-2 me-lg-0 d-flex">
+                  <p class="my-auto mx-lg-auto">Email:</p>
+                </div>
+
+                <div class="col-9 col-md-5 d-flex justify-content-center">
+                  <a href="mailto:saleh.fahmy2@gmail.com" class="email m-auto"
+                  >saleh.fahmy2@gmail.com
+                </a>
+                </div>
+
+                <div class="col d-flex justify-content-end justify-content-md-center justify-content-lg-start mt-3 mt-lg-auto">
+                  <button class="btn btn copy-btn" onclick="copyEmail()">Copy</button>
+
+                </div>
+              </div>
+
+              
+        
+
+              <div class="reviews-container mt-5 mb-5 mt-md-auto mb-md-0">
+                <h6 class="reviews-title text-start">
+                  <img
+                    class="me-5 me-md-3 quotes"
+                    src="static/icons/quotes1.png"
+                    alt=""
+                    srcset=""
+                  />
+                  Feedback & Reviews
+                </h6>
+                <p class="text-center reviews-text">
+                  Saleh F. recreated my website after it had been lost. He provided
+                  excellent work and service, even beyond what I asked for. He was
+                  proactive and engaged, and I would definitely recommend him.
+                </p>
+                <p class="reviews-text client-name text-end text-md-start">
+                  - client one
+                  <img
+                    class="float-end ms-3 mt-2 quotes"
+                    src="static/icons/quotes2.png"
+                    alt=""
+                    srcset=""
+                  />
+                </p>
+              </div>
+            </div>
+
+            <div class="offset-0 offset-md-1 offset-lg-2 col-12 col-md-5 contact-form-wrapper">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    aria-describedby="name"
+                    placeholder="First/Last name..."
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Your E-mail*</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    aria-describedby="emailHelp"
+                    required
+                    placeholder="So i can reach you back..."
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Your Message*</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    aria-describedby="message"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn red-btn m-0 float-end send-btn">
+                  Send E-mail
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+    </main>
     <footer class="d-flex">
       <p class="my-auto">Saleh Fahmy.</p>
 
@@ -579,19 +588,17 @@
         srcset=""
       />
     </footer>
-  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
 
   <script src="js/practicles/particles.min.js"></script>
  
   <script src="js/main.js"></script>
 
-  <script>
+</body>
 
-
-
-
-  </script>
 </html>

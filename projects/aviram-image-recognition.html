@@ -19,48 +19,23 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../css/projects.css" />
     <title>Aviram</title>
   </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Saleh Fahmy.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WHAT I DO</a>
-            </li>
+  <body data-barba="wrapper">
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">MY WORKS</a>
-            </li>
+    <div class="load-container">
+      <div class="loading-screen"></div>
+  </div>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">TECH STACK</a>
-            </li>
+     <main data-barba="container" data-barba-namespace="projects">
+      <link rel="stylesheet" href="../css/projects.css" />
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <nav class="fixed-top mb-0">
+        <a class="backtomain" aria-current="page" href="/new/"><img src="../static/icons/ArrowDown.png" alt="" srcset=""> Back to main.</a>
+
+      </nav>
+
+   
 
     <h1>Aviram Image Recognition app</h1>
 
@@ -189,7 +164,7 @@
         </div>
       </div>
     </div>
-
+  </main> 
     <footer class="d-flex">
       <p class="my-auto">Saleh Fahmy.</p>
 
@@ -206,5 +181,8 @@
         srcset=""
       />
     </footer>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+
   </body>
 </html>
