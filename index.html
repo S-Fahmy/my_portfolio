@@ -10,13 +10,10 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Montserrat:wght@100;500;600;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Saleh Fahmy</title>
@@ -27,8 +24,8 @@
       <div class="loading-screen"></div>
   </div>
 
-    <main data-barba="container" data-barba-namespace="home">
-
+    <main data-barba="container" data-barba-namespace="home" >
+      <div class="smallNav"></div>
     <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Saleh Fahmy.</a>
@@ -46,58 +43,58 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="javascript:;" onclick="scrollToSection('#landing')">HOME</a>
+              <a id="landingNav" class="nav-link active" aria-current="page" href="javascript:;" onclick="scrollToSection('#landing')">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#whatIdo')">WHAT I DO</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#myWorks')">MY WORKS</a>
+              <a id="whatIdoNav" class="nav-link" href="javascript:;" onclick="scrollToSection('#whatIdo')">WHAT I DO</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#techStack')">TECH STACK</a>
+              <a id="myWorksNav" class="nav-link" href="javascript:;" onclick="scrollToSection('#myWorks')">MY WORKS</a>
+            </li>
+
+            <li class="nav-item">
+              <a id="techStackNav" class="nav-link" href="javascript:;" onclick="scrollToSection('#techStack')">TECH STACK</a>
             </li>
 
             
             <li class="nav-item">
-              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#aboutMe')">ABOUT ME</a>
+              <a id="aboutMeNav" class="nav-link" href="javascript:;" onclick="scrollToSection('#aboutMe')">ABOUT ME</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="javascript:;" onclick="scrollToSection('#contactMe')">CONTACT</a>
+              <a id="contactMeNav" class="nav-link" href="javascript:;" onclick="scrollToSection('#contactMe')">CONTACT</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-        <section id="landing" class="landing-container d-flex">
+        <section id="landing" class="landing-container d-flex sec">
           <div class="landing-text my-auto">
-            <h1>HELLO!</h1>
+            <h3>HELLO!</h3>
 
             <div class="animgrp">
-            <h3>I’M A SOFTWARE ENGINEER</h3>
+            <h1>I’M A <span class="bold-red"> FULLSTACK DEVELOPER </span></h1>
 
             <h3>
-              I’M WORKING AS A <span class="bold-red"> FULLSTACK DEVELOPER </span>
-            </h3>
+              I can help you build your web applications ideas.
+                        </h3>
           </div>
-            <button class="btn red-btn landing-btn">
+            <!-- <button class="btn red-btn landing-btn">
               About Me
               <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
             </button>
             <button class="btn blue-btn landing-btn">
               Check my Works
               <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
-            </button>
+            </button> -->
           </div>
-
+          <div class="scroll-icon"><a href="javascript:;" onclick="scrollToSection('#whatIdo')"><img class="" src="static/icons/scroll.png" alt=""/></a></div>
           <div class="social-icons">
             <a class=""
               ><img class="btn-icon" src="static/icons/github.png" alt=""
             /></a>
-            <a class="">
+            <a class="" >
               <img class="btn-icon" src="static/icons/email.png" alt=""
             /></a>
           </div>
@@ -105,74 +102,62 @@
 
         <section id="whatIdo" class="whatdo sec">
           <div class="row gx-0 justify-content-center">
-            <div class="col-12 col-md-3 d-flex">
-              <h4 id="myTitles" class="m-auto">WHAT I DO</h4>
+            <div class="col-12 col-md-4 d-flex flex-column whatdo-text">
+              <h4 id="myTitles" class="m-auto pr"><img class="myTitlesIcon iconRight" src="static/icons/titles/hi.png" alt=""> NICE TO MEET YOU!</h4>
+            
+              <p class="text-center medium mx-auto m-md-auto">
+                I have been working as a developer for <span class="bold-red">4+</span> years,
+                i enjoy doing many things in my work like building and integrating  backend APIs to building UI designs.
+              </p>
+            
             </div>
 
-            <div class="col-8 col-md-6 col-lg-4 d-flex mb-3 whatdo-text">
-              <div class="m-auto">
-                <h5 class="text-center nmu">NICE TO MEET YOU!</h5>
-
-                <p class="text-center">
-                  As a fullstack developer, i enjoy doing many things in my work
-                  ranging from planning/ building and coding the backend for web
-                  apps to designing and coding UIs.
+            <div class="col-12 col-md-6 offset-lg-1 col-lg-2 d-flex flex-column justify-content-center whatDoCards">
+    
+              <div class="row justify-content-around">
+              <div class="whatDoCard mb-md-4 d-flex flex-column col-5 col-md-12">
+                <img
+                  class="card-icon mx-auto"
+                  src=""
+                  alt="backend"
+                  srcset="static/icons/backend.png"
+                />
+                <p class="text-center my-auto">
+                  <span class="desktop-text">experience building</span> backend
+                  applications.
+                </p>
+              </div>
+  
+              <div class="whatDoCard d-flex flex-column col-5 col-md-12">
+                <img
+                  class="card-icon mx-auto"
+                  src=""
+                  alt="frontend"
+                  srcset="static/icons/frontend.png"
+                />
+                <p class="text-center my-auto">
+                  <span class="desktop-text"> experience building responsive</span>
+                  frontend designs.
                 </p>
               </div>
             </div>
 
+            </div>
+
           </div>
 
-          <p class="text-center m-auto w-75 experience-title">
+          <!-- <p class="text-center m-auto w-75 experience-title">
             I have <span class="blue-text">4+ years</span> of Experience building &
             developing:
-          </p>
+          </p> -->
 
-          <div class="row gx-3 justify-content-center whatDoCards">
-            <div class="col-6 col-md-4 col-lg-2 whatDoCard d-flex flex-column">
-              <img
-                class="card-icon mx-auto"
-                src=""
-                alt="backend"
-                srcset="static/icons/backend.png"
-              />
-              <p class="text-center my-auto">
-                <span class="desktop-text">experience building</span> backend
-                applications.
-              </p>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 whatDoCard d-flex flex-column fr">
-              <img
-                class="card-icon mx-auto"
-                src=""
-                alt="frontend"
-                srcset="static/icons/frontend.png"
-              />
-              <p class="text-center my-auto">
-                <span class="desktop-text"> experience building responsive</span>
-                frontend designs.
-              </p>
-            </div>
-
-            <div class="col-2 col-md-4 col-lg-2 whatDoCard d-flex flex-column experience">
-              <img
-                class="card-icon mx-auto"
-                src=""
-                alt="experience"
-                srcset="static/icons/experience.png"
-              />
-              <p class="text-center my-auto">4+ years of experience.</p>
-            </div>
-          </div>
+     
         </section>
 
         <section id="myWorks" class="myworks sec">
-          <h4 id="myTitles" class="m-auto">MY WORKS</h4>
+          <h4 id="myTitles" class="m-auto pl"><img class="myTitlesIcon iconLeft" src="static/icons/titles/mywork.png" alt=""> MY WORK</h4>
           <h6 class="description-text text-center w-25 mx-auto">
-            Selected websites and web applications projects that i have recently
-            worked on
-          </h6>
+            Selected websites and web applications projects. </h6>
 
           <div class="container-fluid projects-container">
             <div class="row project-item justify-content-center">
@@ -242,7 +227,7 @@
             </div>
             <!-- project ends -->
 
-            <div class="row project-item justify-content-center mb-0">
+            <div class="row project-item justify-content-center mb-0 item-3">
               <div class="col-12 col-md project-description">
                 <h5 class="text-center text-md-start">
                   Attendance & work hours tracker web app
@@ -276,26 +261,54 @@
           </div>
         </section>
 
-        <section id="aboutMe" class="aboutme sec d-flex flex-column">
-          <h4 id="myTitles" class="title-margin m-auto">SOME MOTO HERE</h4>
-          <p class="m-auto w-75">
-            i have a diverse set of skills that i have accumulated over the years,
-            taking part building different projects in my previous job like a
-            backend system for HR, invoicing, PO and employees attendances/tracking
-            web application for the first company i worked at.
+        <section id="aboutMe" class="aboutme sec mx-auto">
+          <h4 id="myTitles" class="title-margin m-auto pr"><img class="myTitlesIcon iconRight" src="static/icons/titles/moreaboutme.png" alt="">MORE ABOUT ME</h4>
+          
+          <div class="row m-auto  justify-content-around">
+          
+            <div class="col-12 col-md-5 d-flex">
+          <p class="m-auto moreaboutmetext">
+            I’m from Egypt and I like to help people by building applications from scratch
             <br />
             <br />
-            I’m currently working on building my freelancing career base.
+            I’m currently on the look for freelancing and remote jobs oppurtunites.
             <span class="semi-bold-text"
-              >If you are looking to hire a developer to build a website or a web
-              application for you, you can
+              >If you are looking to hire a developer to build a website or a web application for you, you can
               <a class="url" href="#"> contact me here </a></span
             >.
           </p>
+        </div>
+
+        <div class="col-12 col-md-4 reviews-container mt-5 mb-5 mt-md-auto mb-md-0">
+            <h6 class="reviews-title text-start">
+              <img
+                class="me-5 me-md-3 quotes"
+                src="static/icons/quotes1.png"
+                alt=""
+                srcset=""
+              />
+              Feedback & Reviews
+            </h6>
+            <p class="text-center reviews-text">
+              Saleh F. recreated my website after it had been lost. He provided
+              excellent work and service, even beyond what I asked for. He was
+              proactive and engaged, and I would definitely recommend him.
+            </p>
+            <p class="reviews-text client-name text-end text-md-start">
+              - client one
+              <img
+                class="float-end ms-3 mt-2 quotes"
+                src="static/icons/quotes2.png"
+                alt=""
+                srcset=""
+              />
+            </p>
+        </div>
+        </div>
         </section>
 
         <section id="techStack" class="techSkills sec">
-          <h4 id="myTitles" class="m-auto">TECHNICAL SKILLS</h4>
+          <h4 id="myTitles" class="m-auto pl">TECHNICAL SKILLS <img class="myTitlesIcon iconLeft" src="static/icons/titles/techskills.png" alt=""></h4>
           <h6 class="description-text text-center mx-auto">
             the languages, frameworks, databases and other tools that i’m currently
             using in my work
@@ -317,7 +330,6 @@
           </div>
 
           <div id="langs" class="techstack row justify-content-center mx-auto">
-            <img class="tab-icon" src="static/icons/1.png" alt="" />
 
             <div class="col offset-md-0 offset-lg-1 col-md-5 col-lg-3 left-tech-col">
 
@@ -499,35 +511,11 @@
               
         
 
-              <div class="reviews-container mt-5 mb-5 mt-md-auto mb-md-0">
-                <h6 class="reviews-title text-start">
-                  <img
-                    class="me-5 me-md-3 quotes"
-                    src="static/icons/quotes1.png"
-                    alt=""
-                    srcset=""
-                  />
-                  Feedback & Reviews
-                </h6>
-                <p class="text-center reviews-text">
-                  Saleh F. recreated my website after it had been lost. He provided
-                  excellent work and service, even beyond what I asked for. He was
-                  proactive and engaged, and I would definitely recommend him.
-                </p>
-                <p class="reviews-text client-name text-end text-md-start">
-                  - client one
-                  <img
-                    class="float-end ms-3 mt-2 quotes"
-                    src="static/icons/quotes2.png"
-                    alt=""
-                    srcset=""
-                  />
-                </p>
-              </div>
+
             </div>
 
             <div class="offset-0 offset-md-1 offset-lg-2 col-12 col-md-5 contact-form-wrapper">
-              <form>
+              <form id="contactForm">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Your Name</label>
                   <input
@@ -546,7 +534,7 @@
                     type="email"
                     class="form-control"
                     id="email"
-                    name="email"
+                    name="_replyto"
                     aria-describedby="emailHelp"
                     required
                     placeholder="So i can reach you back..."
@@ -568,6 +556,8 @@
                   Send E-mail
                 </button>
               </form>
+
+              <div id="successmsg"></div>
             </div>
           </div>
         </section>
@@ -597,6 +587,7 @@
 
   <script src="js/practicles/particles.min.js"></script>
  
+  <script src="js/animations/contentAnimations.js"></script>
   <script src="js/main.js"></script>
 
 </body>
