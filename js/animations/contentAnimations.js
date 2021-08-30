@@ -160,6 +160,7 @@ async function animateContact() {
 
 function pageTransition(namespace) {
     let tl = gsap.timeline();
+
     tl.to(".loading-screen", {
         duration: 1.2,
         width: "100%",

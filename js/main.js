@@ -1,24 +1,4 @@
 
-
-
-// gsap.utils.toArray('.project-item').forEach((item, i) => {
-//   ScrollTrigger.create({
-//     trigger: item,
-//     start: getPin(),
-//     pin: true,
-//   });
-
-// });
-
-function getPin() {
-  if (window.innerWidth < 450) {
-    return "top 15%";
-  }
-
-  return "top 35%";
-
-}
-
 async function scrollToSection(sectionId) {
   gsap.to(window, { duration: 1, scrollTo: { y: sectionId, offsetY: 120 } });
 }
@@ -31,92 +11,75 @@ window.onload = async function () {
 
   barba.init({
     sync: true,
-    debug: true,
     transitions: [{
       name: 'home',
 
       async leave(data) {
         const done = this.async();
         pageTransition(data.current.namespace);
-        await delay(800);
+        await delay(800);        
         done();
       },
 
       async enter(data) {
-        data.next.namespace === "home" ? cleanGSAP() : window.scrollTo(0, 0);
-
-        // contentAnimation();
+        data.next.namespace === "home" ? cleanGSAP() : gsap.to(window, {scrollTo: {y: 0}});
 
       },
 
-      async once(data) {
-        // contentAnimation();
-
-      }
 
     }],
     views: [{
       namespace: 'home',
-      beforeLeave: function (data) {
+      beforeLeave: async function (data) {
         scrollY = barba.history.current.scroll.y;
 
       },
-      beforeEnter: function () {
+      beforeEnter: async function () {
         if (scrollY > 0) {
           window.scrollTo(0, scrollY);
         }
 
       },
 
-      afterEnter: async function (data) {
+      afterEnter: function (data) {
         setUpanimations();
       }
     },
     {
       namespace: 'projects',
-      beforeEnter: function (data) {
-        // window.scrollTo(0, 0);
-      }
     }]
   });
 
 
-
-  if(window.innerWidth < 500){
+  if (window.innerWidth < 1000) {
     gsap.to('.navbar-brand', {
       scrollTrigger: {
         trigger: '.landing-text',
         start: 'top 5%',
         scrub: 2
       },
-      opacity: 0, x: -100, duration: 2});
+      opacity: 0, x: -100, duration: 2
+    });
   }
 
 };
 
 
-
-let activeTabId = '#langs' //default
+let activeTabId = '#langs';
 
 async function displayTab(e, tabName) {
 
-  //remove active class from the tabs menu old element
   document.querySelector('.tech-tabs .active').classList.remove('active');
 
-  //hide old content
   document.querySelector(activeTabId).classList.add('hidden');
 
-  //add active class to the tabs menu element and display new content
   e.target.classList.add('active');
 
   document.querySelector(tabName).classList.remove('hidden');
 
-  activeTabId = tabName
-
-
+  activeTabId = tabName;
 
 }
-
 
 async function copyEmail() {
 
@@ -131,8 +94,6 @@ async function copyEmail() {
 
 }
 
-
-
 function delay(n) {
   n = n || 2000;
   return new Promise((done) => {
@@ -142,14 +103,10 @@ function delay(n) {
   });
 }
 
-
-
-
-
 let form = document.querySelector("#contactForm");
-form.addEventListener("submit", helloBrozzer);
+form.addEventListener("submit", mailSubmit);
 
-async function helloBrozzer(event) {
+async function mailSubmit(event) {
 
   event.preventDefault();
 
@@ -168,25 +125,3 @@ async function helloBrozzer(event) {
     status.innerHTML = "Error, something went wrong";
   });
 }
-
-
-// let burgerBtn = document.querySelector(".navbar-toggler");
-
-// burgerBtn.addEventListener("click", toggleMenu);
-
-// let menuAnim = null;
-// async function toggleMenu() {
-//   smallNav = document.querySelector('.smallNav');
-  
-//   if(menuAnim == null){
-//   menuAnim = gsap.timeline().to(smallNav, { duration: 1, display: "flex", clipPath: "polygon(0 0, 100% 0, 100% 14%, 0 14%)" })
-//     .from(smallNav, { duration: 1, right: '-100%' }, '-=1.1')
-//     .to(smallNav, { duration: 0.6, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: 'power3' });
-
-//   }else{
-//     menuAnim.play();
-//   }
-//   setTimeout(() => { menuAnim.reverse();}, 4000); //close simulation
-
-
-// }
