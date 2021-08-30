@@ -34,22 +34,6 @@ window.onload = async function () {
     debug: true,
     transitions: [{
       name: 'home',
-      // leave(data) {
-
-      //   return gsap.to(data.current.container, {
-      //     opacity: 0
-      //   });
-      // },
-      // enter(data) {
-
-      //   if (data.next.namespace === "home") cleanGSAP();
-
-      //   return gsap.from(data.next.container, {
-      //     opacity: 0
-      //   });
-
-
-      // },
 
       async leave(data) {
         const done = this.async();
@@ -96,6 +80,17 @@ window.onload = async function () {
     }]
   });
 
+
+
+  if(window.innerWidth < 500){
+    gsap.to('.navbar-brand', {
+      scrollTrigger: {
+        trigger: '.landing-text',
+        start: 'top 5%',
+        scrub: 2
+      },
+      opacity: 0, x: -100, duration: 2});
+  }
 
 };
 
@@ -175,23 +170,23 @@ async function helloBrozzer(event) {
 }
 
 
-let burgerBtn = document.querySelector(".navbar-toggler");
+// let burgerBtn = document.querySelector(".navbar-toggler");
 
-burgerBtn.addEventListener("click", toggleMenu);
+// burgerBtn.addEventListener("click", toggleMenu);
 
-let menuAnim = null;
-async function toggleMenu() {
-  smallNav = document.querySelector('.smallNav');
+// let menuAnim = null;
+// async function toggleMenu() {
+//   smallNav = document.querySelector('.smallNav');
   
-  if(menuAnim == null){
-  menuAnim = gsap.timeline().to(smallNav, { duration: 1, display: "flex", clipPath: "polygon(0 0, 100% 0, 100% 14%, 0 14%)" })
-    .from(smallNav, { duration: 1, right: '-100%' }, '-=1.1')
-    .to(smallNav, { duration: 0.6, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: 'power3' });
+//   if(menuAnim == null){
+//   menuAnim = gsap.timeline().to(smallNav, { duration: 1, display: "flex", clipPath: "polygon(0 0, 100% 0, 100% 14%, 0 14%)" })
+//     .from(smallNav, { duration: 1, right: '-100%' }, '-=1.1')
+//     .to(smallNav, { duration: 0.6, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: 'power3' });
 
-  }else{
-    menuAnim.play();
-  }
-  setTimeout(() => { menuAnim.reverse();}, 4000); //close simulation
+//   }else{
+//     menuAnim.play();
+//   }
+//   setTimeout(() => { menuAnim.reverse();}, 4000); //close simulation
 
 
-}
+// }

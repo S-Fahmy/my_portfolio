@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"> 
+    
 
     <link rel="stylesheet" href="css/main.css" />
 
@@ -38,7 +35,12 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon d-flex flex-column ">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </span>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -70,6 +72,7 @@
       </div>
     </nav>
         <section id="landing" class="landing-container d-flex sec">
+          <div class="landing-wrapper m-auto">
           <div class="landing-text my-auto">
             <h3>HELLO!</h3>
 
@@ -80,28 +83,28 @@
               I can help you build your web applications ideas.
                         </h3>
           </div>
-            <!-- <button class="btn red-btn landing-btn">
-              About Me
-              <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
-            </button>
-            <button class="btn blue-btn landing-btn">
-              Check my Works
-              <img class="btn-icon" src="static/icons/ArrowDown.png" alt="" />
-            </button> -->
+   
           </div>
+
+          <div class="landing-laptop my-auto">
+            <img src="static/images/laptop.png" class="img-fluid">
+          </div>
+
+        </div>
           <div class="scroll-icon"><a href="javascript:;" onclick="scrollToSection('#whatIdo')"><img class="" src="static/icons/scroll.png" alt=""/></a></div>
           <div class="social-icons">
-            <a class=""
+            <a class="" href="https://github.com/S-Fahmy"
               ><img class="btn-icon" src="static/icons/github.png" alt=""
             /></a>
-            <a class="" >
+            <a class="" onclick="scrollToSection('#contactMe')" href="javascript:;">
               <img class="btn-icon" src="static/icons/email.png" alt=""
             /></a>
           </div>
         </section>
 
+
         <section id="whatIdo" class="whatdo sec">
-          <div class="row gx-0 justify-content-center">
+          <div class="row gx-0 justify-content-around">
             <div class="col-12 col-md-4 d-flex flex-column whatdo-text">
               <h4 id="myTitles" class="m-auto pr"><img class="myTitlesIcon iconRight" src="static/icons/titles/hi.png" alt=""> NICE TO MEET YOU!</h4>
             
@@ -160,8 +163,8 @@
             Selected websites and web applications projects. </h6>
 
           <div class="container-fluid projects-container">
-            <div class="row project-item justify-content-center">
-              <div class="col-12 col-md project-description">
+            <div class="row project-item justify-content-around">
+              <div class="col-12 col-md-6 project-description">
                 <h5 class="text-center text-md-start">Aviram Image Recognition</h5>
 
                 <div class="tech-tag mx-auto mx-md-0">Fullstack Development</div>
@@ -184,7 +187,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md d-flex project-image">
+              <div class="col-12 col-md-6 d-flex project-image">
                 <img
                   src="static/images/project-aviram.png"
                   alt="aviram"
@@ -197,14 +200,14 @@
 
             <div class="row project-item justify-content-center item-2">
 
-              <div class="col-12 col-md d-flex project-image">
+              <div class="col-12 col-md-6 d-flex project-image">
                 <img
                   src="static/images/project-ist.png"
                   alt="ist"
                   class="me-auto mb-auto img-fluid"
                 />
               </div>
-              <div class="col-12 col-md project-description">
+              <div class="col-12 col-md-6 project-description">
                 <h5 class="text-center text-md-start">IST industries website</h5>
 
                 <div class="tech-tag mx-auto mx-md-0">Frontend Development</div>
@@ -228,7 +231,7 @@
             <!-- project ends -->
 
             <div class="row project-item justify-content-center mb-0 item-3">
-              <div class="col-12 col-md project-description">
+              <div class="col-12 col-md-6 project-description">
                 <h5 class="text-center text-md-start">
                   Attendance & work hours tracker web app
                 </h5>
@@ -250,7 +253,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md d-flex project-image">
+              <div class="col-12 col-md-6 d-flex project-image">
                 <img
                   src="static/images/project-attendance.png"
                   alt="aviram"
@@ -274,35 +277,83 @@
             I’m currently on the look for freelancing and remote jobs oppurtunites.
             <span class="semi-bold-text"
               >If you are looking to hire a developer to build a website or a web application for you, you can
-              <a class="url" href="#"> contact me here </a></span
+              <a class="url" href="javascript:;" onclick="scrollToSection('#contactMe')"> contact me here </a></span
             >.
           </p>
         </div>
 
         <div class="col-12 col-md-4 reviews-container mt-5 mb-5 mt-md-auto mb-md-0">
-            <h6 class="reviews-title text-start">
+            <h6 class="reviews-title text-center">
               <img
-                class="me-5 me-md-3 quotes"
-                src="static/icons/quotes1.png"
-                alt=""
-                srcset=""
-              />
+              class="float-end  mt-0 quotes"
+              src="static/icons/quotes2.png"
+              alt=""
+              srcset=""
+            />
               Feedback & Reviews
+
             </h6>
-            <p class="text-center reviews-text">
-              Saleh F. recreated my website after it had been lost. He provided
-              excellent work and service, even beyond what I asked for. He was
-              proactive and engaged, and I would definitely recommend him.
-            </p>
-            <p class="reviews-text client-name text-end text-md-start">
-              - client one
-              <img
-                class="float-end ms-3 mt-2 quotes"
-                src="static/icons/quotes2.png"
-                alt=""
-                srcset=""
-              />
-            </p>
+ 
+            <div id="reviewsSlider" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="3" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="4" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="5" aria-label="Slide 3"></button>
+
+              </div>
+              <div class="carousel-inner m-auto">
+                <div class="carousel-item active">
+                  <p class="text-center reviews-text">
+
+                    Saleh is an outstanding developer, cooperative person, and problem solver. He worked for me on an extremely complex project and delivered milestones on time, always!
+I will work with him again, highly recommended.
+                  </p>
+
+                </div>
+                <div class="carousel-item">
+                  <p>                    Saleh F. recreated my website after it had been lost. He provided
+                    excellent work and service, even beyond what I asked for. He was
+                    proactive and engaged, and I would definitely recommend him.</p>
+
+
+
+                </div>
+                <div class="carousel-item">
+                  <p>Saleh was exceptional for providing the quality of work, and dedicated for getting the job done. Would give 5+ stars.</p>
+                
+                
+
+                </div>
+
+                <div class="carousel-item">
+                  <p> Great communication, clearly very knowledgeable and tones of effort to make sure it was delivered. </p>
+
+
+                </div>
+
+                <div class="carousel-item">
+                  <p>fast and impressive work .</p>
+
+
+
+                </div>
+
+
+
+                <div class="carousel-item">
+                  <p>Thank you mr saleh for the fast and professional work  .</p>
+
+                </div>
+
+              
+              </div>
+            </div>
+
         </div>
         </div>
         </section>
@@ -338,14 +389,14 @@
               <div class="col-6 col-md-5 col-lg-3  ">
                 <p class="framework">Flask</p>
               </div>
-              <div class="col-6 col-md-5 col-lg-3  ">
+              <div class="col-6 col-md-5 col-lg-4  ">
                 <p class="framework">Django</p>
               </div>
             </div>
             <p class="text-start">Java</p>
 
             <div class="frameworks row g-0">
-              <div class="col-7 col-md-5 col-lg-3">
+              <div class="col-7 col-md-5 col-lg-4">
                 <p class="framework">Java EE</p>
               </div>
             </div>
@@ -355,7 +406,7 @@
               <div class="col-5 col-md-5 col-lg-4">
                 <p class="framework">Laravel</p>
                 </div>
-                <div class="col-7 col-md-6 col-lg-4  ">
+                <div class="col-7 col-md-6 col-lg-6  ">
                 <p class="framework">CodeIgniter</p>
               </div>
             </div>
@@ -372,7 +423,7 @@
               <div class="col-6 col-md-5 col-lg-4 ">
                 <p class="framework">Redis</p>
               </div>
-              <div class="col-7 col-md-6 col-lg-4 ">
+              <div class="col-7 col-md-6 col-lg-6 ">
                 <p class="framework">PostgreSQL</p>
               </div>
 
@@ -392,10 +443,10 @@
 
             <p class="text-start">HTML & CSS</p>
             <div class="frameworks row g-1 g-md-3">
-              <div class="col-7 col-md-5 col-lg-4 ">
+              <div class="col-7 col-md-5 col-lg-5 ">
                 <p class="framework">Bootstrap</p>
                 </div>
-                <div class="col-5 col-md-5 col-lg-3 ">
+                <div class="col-5 col-md-5 col-lg-4 ">
 
                 <p class="framework">Bulma</p>
                 </div>
@@ -424,7 +475,7 @@
                 <p class="framework">ELB</p>
               </div>
 
-              <div class="col-7 col-md-6 col-lg-4">
+              <div class="col-7 col-md-6 col-lg-6">
                 <p class="framework">S3 storage</p>
               </div>
               
@@ -490,19 +541,19 @@
           <div class="row contact-container m-auto">
             <div class="col-12 col-md-6 col-lg-5 justify-content-center d-flex flex-column">
 
-              <h4 id="myTitles" class="text-center text-md-start">CONTACT</h4>
-              <div class="row mb-5">
-                <div class="col-3 col-md-4 col-lg-2 me-md-2 me-lg-0 d-flex">
-                  <p class="my-auto mx-lg-auto">Email:</p>
+              <h4 id="myTitles" class="m-auto mb-5 mb-md-auto text-center text-md-start">CONTACT</h4>
+              <div class="row mb-auto">
+                <div class="col-3 col-lg-4 me-md-2 me-lg-0 d-flex">
+                  <p class="my-auto me-lg-auto ps-0 ps-md-3">Email:</p>
                 </div>
 
-                <div class="col-9 col-md-5 d-flex justify-content-center">
+                <div class=" col-9 col-md-8 d-flex justify-content-center">
                   <a href="mailto:saleh.fahmy2@gmail.com" class="email m-auto"
                   >saleh.fahmy2@gmail.com
                 </a>
                 </div>
 
-                <div class="col d-flex justify-content-end justify-content-md-center justify-content-lg-start mt-3 mt-lg-auto">
+                <div class="col d-flex justify-content-end justify-content-md-center justify-content-lg-start mt-3 mt-lg-2">
                   <button class="btn btn copy-btn" onclick="copyEmail()">Copy</button>
 
                 </div>
@@ -514,7 +565,7 @@
 
             </div>
 
-            <div class="offset-0 offset-md-1 offset-lg-2 col-12 col-md-5 contact-form-wrapper">
+            <div class="offset-0 offset-md-1 offset-lg-2 col-12 col-md-5 contact-form-wrapper mt-5 mt-md-0">
               <form id="contactForm">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Your Name</label>
@@ -562,30 +613,27 @@
           </div>
         </section>
     </main>
-    <footer class="d-flex">
+    <footer class="d-flex justify-content-around">
       <p class="my-auto">Saleh Fahmy.</p>
-
+<a href="https://github.com/S-Fahmy" class="ms-auto my-auto">
       <img
         class="ms-auto my-auto"
         src="static/icons/github.png"
         alt=""
         srcset=""
       />
-      <img
-        class="ms-3 my-auto"
-        src="static/icons/github.png"
-        alt=""
-        srcset=""
-      />
+    </a>
+
     </footer>
-  <script src="https://unpkg.com/@barba/core"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <script src="js/practicles/particles.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+
  
   <script src="js/animations/contentAnimations.js"></script>
   <script src="js/main.js"></script>

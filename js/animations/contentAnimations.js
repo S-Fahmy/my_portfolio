@@ -8,10 +8,11 @@ function setUpanimations() {
     animateWhatIdo();
     animateMyWorks();
     animateTechStack();
+    animateContact();
 
 }
 
-function animateNavbar() {
+async function animateNavbar() {
     gsap.to('.navbar', {
         scrollTrigger: {
             trigger: '.landing-text',
@@ -21,7 +22,8 @@ function animateNavbar() {
             // markers: true
         },
 
-        background: '#242424',
+        background: '#2D3035',
+        filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
         duration: 0.4
     });
 
@@ -39,7 +41,9 @@ async function navbarActiveTracker() {
                 toggleActions: "play reverse play reverse"
             }
         }).to(navItem, {
-
+            color: "#FFF",
+            duration: 0.1,
+        }).to(navItem, {
             color: "#FF0000",
             duration: 0.5,
             ease: 'power3'
@@ -55,18 +59,19 @@ async function navbarActiveTracker() {
     });
 }
 
-function animateLanding() {
+async function animateLanding() {
     gsap.timeline().from('.landing-text h3', { delay: 1, duration: 0.5, scaleX: 0, ease: "back" })
         .to('.landing-text .animgrp', { duration: 1.5, clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0 100%)", y: '30' })
-        .to('.landing-text .animgrp .bold-red', { duration: 1.5, opacity: 1 })
-        .add(async function () { particlesJS.load('landing', '/new/js/practicles/particles.json'); })
-        .from('.scroll-icon', { duration: 1, opacity: 0, ease: "back", x: -50 }, '-=1.5')
+        .to('.landing-text .animgrp .bold-red', { duration: 1.5, opacity: 1 , ease: 'power3'})
+        .from('.landing-laptop', {duration: 1, scale: 0, ease: 'back'})
+        // .add(async function () { particlesJS.load('.landing-laptop', 'js/practicles/particles.json'); })
+        .from('.scroll-icon', { duration: 1, opacity: 0, ease: "back", x: -50 }, '-=2.5')
         .from('.landing-container .social-icons', { duration: 1, opacity: 0, ease: "back", x: 50 }, '-=1.5');
 
 
 }
 
-function animateMyTitles() {
+async function animateMyTitles() {
     gsap.utils.toArray('#myTitles').forEach((item, i) => {
         gsap.timeline({ scrollTrigger: { trigger: item, start: 'top 90%' } })
             .from(item, { x: (i % 2 === 0) ? 300 : -300, opacity: 0, duration: 2, ease: Power4.in })
@@ -76,7 +81,7 @@ function animateMyTitles() {
 
 }
 
-function animateWhatIdo() {
+async function animateWhatIdo() {
     gsap.from('.whatdo .whatdo-text p', {
         scrollTrigger: {
             trigger: '.whatdo .whatdo-text p',
@@ -104,7 +109,7 @@ function animateWhatIdo() {
 
 }
 
-function animateMyWorks() {
+async function animateMyWorks() {
     gsap.utils.toArray('.project-item').forEach((item, i) => {
         // i = 2 is hardcoded as the last element for now.
         gsap.timeline({
@@ -125,7 +130,7 @@ function animateMyWorks() {
 
 }
 
-function animateTechStack() {
+async function animateTechStack() {
     gsap.from('.techSkills', {
         scrollTrigger: {
             trigger: '.techSkills',
@@ -146,8 +151,9 @@ function animateAboutMe() {
 
 }
 
-function animateContact() {
+async function animateContact() {
 
+    gsap.from('.contact-form-wrapper', {scrollTrigger: {trigger: '.contact-form-wrapper', start: 'top 80%'}, opacity: 0, duration: 3.5, ease: 'fadeOut'});
 
 }
 
